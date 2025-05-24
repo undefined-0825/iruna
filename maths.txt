@@ -1,0 +1,1191 @@
+[X = 0.02 * INT] [STR up by X] オートスキル発動 [Paladin] [Bishop] 光魔法威力 +10%
+[Unknown] オートスキル発動 If [Lv > 200] then オートスキル発動
+[MDEF up by Lv] 絶対命中 +25% If [Lv > 140] then オートスキル発動
+[X = Lv] [X = X  2] [MDEF up by X] 絶対命中 +25% If [Lv > 140] then オートスキル発動
+[X = 2.50 * Lv] [MDEF up by X] If [Lv > 140] then オートスキル発動 INT +5
+[X = 3.00 * Lv] [MDEF up by X] If [Lv > 140] then オートスキル発動 INT +5
+if [Lv < 50] then 経験値 +20%
+If [Lv > 300] then 気絶発生 +0%
+If [Lv > 300] then 気絶発生 +0%
+If [STR > 400] then If [DEX > 400] then ATK +32% STR +100
+If [STR > 400] then If [DEX > 400] then ATK +34% STR +110 [X = 0.05 * AGI] [STR up by X]
+[ up by STR] [ up by STR] クリティカルダメージ +15% クリティカル率 -30
+[X = STR] [X = X  4] [ up by X] クリティカルダメージ +16% クリティカル率 -20
+[X = STR] [X = X  6] [ up by X] ATK +4% クリティカルダメージ +18% 命中 +10%
+[X = 0.02 * Lv] [MaxMP up by X] If [STR > 300] then If [VIT > 300] then ATK +7% オートスキル発動 物理貫通 +5%
+if [Lv < 50] then 経験値 +20%
+[X = 0.20 * VIT] [回避 up by X] [X = X / 2] [回避時反撃率 up by X] [X = X  -3] [VIT up by X]
+if [DEX < 300] then ASPD = 1
+if [DEX < 300] then ASPD = 1
+if [DEX < 300] then ASPD = 1
+if [DEX < 300] then ASPD = 1
+[X = Lv] [X = X  2] [MaxMP up by X] ヘイト増加 +20% オートスキル発動
+[X = Lv] [X = X  2] [MaxMP up by X] ヘイト増加 +25% クリティカルダメージ +8% オートスキル発動
+[MaxMP up by Lv] ヘイト増加 +15% オートスキル発動
+[X = 0.50 * STR] [ATK up by X] If [VIT < 200] then 反動ダメージ +50% If [Lv > 300] then オートスキル発動
+[X = 0.25 * CRT] [ATK up by X] 魔法耐性 +10% [Gladiator] オートスキル発動
+[X = CRT] [X = X / 20] [CRT up by X] 魔法耐性 +10% アイテムディレイ -0.5s オートスキル発動
+[X = 0.05 * CRT] [CRT up by X] 魔法耐性 +12% アイテムディレイ -0.6s オートスキル発動
+[X = 0.06 * CRT] [CRT up by X] 魔法耐性 +14% アイテムディレイ -1.0s オートスキル発動
+[Servant] 無魔法威力 +20%
+[X = DEX] [ATK up by X] [X = X  10] [MaxHP up by X] オートスキル発動
+[X = DEX] [ATK up by X] [X = X  10] [MaxHP up by X] オートスキル発動
+[ up by Lv]
+[X = Lv] [X = X  2] [MaxHP up by X] オートスキル発動
+[X = Lv] [X = X  3] [MaxHP up by X] オートスキル発動 割合軽減 +5% 無属性に物理 +5%
+[Y = 3.50 * Lv] [MaxHP up by Y]
+[ up by Lv] [X = 0.20 * STR] [STR up by X] [X = 0.05 * VIT] [MaxHP up by X]
+if [Lv < 50] then 経験値 +20%
+If [AGI > 128] then オートスキル発動 オートスキル発動
+When equip [歌姫メダル] then スに魔法 +3%
+[X = 0.03 * STR] [物理貫通 up by X]
+[X = 0.04 * STR] [物理貫通 up by X]
+If [STR > 400] then シェルブレイク率 +10% [X = 5.00 * Lv] [ up by X] 魔法耐性 -10%
+If [VIT > 200] then 水属性に物理 +5% 物理貫通 +10%
+[X = 0.02 * STR] [X = X + 5] [火魔法威力 up by X] オートスキル発動 物理耐性 -15% If [Mage] then オートスキル発動 +5%
+When equip [堕神の魔鎧] then MaxHP +10% MaxMP +10% ATK +6% スに物理 +2% 物理貫通 +15% 闇属性に物理 -90%
+If [Lv > 256] then オートスキル発動 +2%
+if [DEX < 300] then 物理貫通 -30%
+[X = 0.40 * Lv] [ATK up by X] [X = 0.50 * Lv] [MATK up by X]
+[X = Lv] [X = X  2] [ up by X]
+if [Lv < 50] then 経験値 +20%
+If [Lv < 100] then ATK -100 ATK -25%
+[Samurai] [X = DEX] [X = X  150] [X = X / 100] [ATK up by X] オートスキル発動
+[Samurai] [X = DEX] [X = X  160] [X = X / 100] [ATK up by X] [X = 0.01 * DEX] [ATK up by X] オートスキル発動
+[X = CRT] [X = X / 20] [Y = 20] [Y = Y - X] [クリティカルダメージ up by Y] 恐怖発生 +1% MaxMP +10% オートスキル発動
+[Halloween] 攻撃間隔半減
+[X = 0.30 * DEX] [STR up by X] [X = 0.50 * DEX] [X = X  -1] [DEX up by X]
+[X = 0.40 * DEX] [STR up by X] [X = 0.50 * DEX] [X = X  -1] [DEX up by X]
+If [Warrior] then [X = 3.00 * Lv] [ up by X] クリティカルダメージ +7%
+[X = Lv] [X = X / 5] [ up by X]
+[X = 0.20 * Lv] [ up by X]
+[X = VIT] [Y = 0.60 * X] [ATK up by Y] ATK +16% 物理貫通 +5% オートスキル発動 オートスキル発動 +7%
+[X = 0.01 * AGI] [回避時反撃率 up by X] オートスキル発動 if [STR < 300] then ASPD = 1
+[X = 0.02 * INT] [魔法貫通 up by X] オートスキル発動 MATK +2%
+[X = 0.03 * INT] [魔法貫通 up by X] オートスキル発動 MATK +4%
+If [Lv > 140] then ATK +45% オートスキル発動
+[X = 0.50 * AGI] [ATK up by X] [X = 0.50 * STR] [DEF up by X]
+[X = 0.50 * AGI] [ATK up by X] [X = 0.50 * STR] [DEF up by X]
+If [Lv > 300] then If [INT > 400] then 火魔法威力 +5%
+If [Lv > 300] then If [INT > 400] then 水魔法威力 +5%
+When equip [傭兵メダル] then スに物理 +3%
+When equip [富豪メダル] then 経験値 +5%
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[X = 0.05 * Lv] [DEX up by X]
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[X = 0.05 * Lv] [DEX up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[X = VIT] [ATK up by X]
+[X = 0.02 * DEX] [X = X + 10] [物理貫通 up by X]
+[X = Lv] [X = X  3] [魔法威力 up by X] オートスキル発動 火属性に物理 -10% 水属性に物理 -10% 風属性に物理 -10% 地属性に物理 -10%
+[X = 4.00 * Lv] [魔法威力 up by X] オートスキル発動 火属性に物理 -10% 水属性に物理 -10% 風属性に物理 -10% 地属性に物理 -10% 物理耐性 -10% [Enchanter] 魔法貫通 +18%
+[X = 3.50 * Lv] [魔法威力 up by X] オートスキル発動 火属性に物理 -10% 水属性に物理 -10% 風属性に物理 -10% 地属性に物理 -10% 物理耐性 -10% [Enchanter] 魔法貫通 +15%
+[X = 0.50 * AGI] [ATK up by X]
+If [INT > 200] then オートスキル発動
+[X = DEX] [X = X / 16] [物理貫通 up by X]
+If [Warrior] then [Jan] 射程 +1 絶対回避 +10% 魔法回避 +10%
+[X = Lv] [X = X / 2] [ATK up by X]
+[X = 0.03 * STR] [物理貫通 up by X]
+If [Lv > 256] then オートスキル発動 +4%
+[ up by STR] オートスキル発動
+[ up by STR] [X = 0.03 * Lv] [物理貫通 up by X] ATK +7% オートスキル発動
+[X = 1.50 * STR] [ up by X] [X = 0.03 * Lv] [物理貫通 up by X] ATK +7% オートスキル発動
+[X = 1.50 * STR] [ up by X] [ATK up by X] [X = 0.03 * Lv] [物理貫通 up by X] ATK +7% オートスキル発動
+[X = 0.50 * STR] [DEF up by X] MaxHP +3% VIT +5 オートスキル発動
+[Y = 0.02 * VIT * 100] If [Y > 500] then [Y = 500] [ATK up by Y] オートスキル発動
+[Y = 0.02 * VIT * 100] If [Y > 600] then [Y = 600] [ATK up by Y] オートスキル発動
+[X = 0.03 * STR] [物理耐性 up by X] [魔法耐性 up by X]
+[X = 0.05 * STR] [物理耐性 up by X] [魔法耐性 up by X]
+[X = 0.05 * STR] [物理耐性 up by X] [魔法耐性 up by X]
+[X = X / 100] スに物理 +20% スに魔法 +20%
+[X = X / 100] スに物理 +25% スに魔法 +25%
+[X = AGI] [X = X  8] [MaxHP up by X]
+If [AGI > 300] then 水属性に物理 +5% [X = 10.00 * AGI] [MaxHP up by X]
+[X = 12] [X = X - ASPD] [X = X  33] If [X > 250] then [X = 250] [Feb] [ATK up by X] [MATK up by X] AGI +48 オートスキル発動 クリティカル率 +20
+[X = 0.50 * AGI] [ATK up by X]
+If [STR > 300] then シェルブレイク率 +3% [X = 3.00 * Lv] [ up by X] 魔法耐性 -10%
+When equip [盗賊メダル] then ドロップ +5%
+If [Lv > 300] then If [INT > 400] then 風魔法威力 +5%
+[Unknown] オートスキル発動 +10%
+[X = 0.50 * Lv] [Jan] [X = 1] [MaxHP up by X] オートスキル発動 [Xmas] 攻撃間隔半減 物理耐性 +3%
+If [Lv > 300] then If [INT > 256] then 火魔法威力 +2%
+If [Lv > 300] then If [INT > 256] then 水魔法威力 +2%
+[Gladiator] オートスキル発動 -25% 物理耐性 -10% 魔法耐性 -10% オートスキル発動
+[ up by Lv] オートスキル発動
+[ATK up by AGI]
+[X = 12] [X = X - ASPD] [X = X  20] [ATK up by X] If [STR > 128] then [X = STR] [X = X - 128] [Y = X] [Y = Y / 2] [Y = Y + X] [Y = Y  -1] [ATK up by Y]
+[X = 12] [X = X - ASPD] [X = X  22] [ATK up by X] If [STR > 128] then [X = STR] [X = X - 128] [Y = X] [Y = Y / 2] [Y = Y + X] [Y = Y  -1] [ATK up by Y]
+[X = 12] [X = X - ASPD] [X = X  24] [ATK up by X] If [STR > 128] then [X = STR] [X = X - 128] [Y = X] [Y = Y / 2] [Y = Y + X] [Y = Y  -1] [ATK up by Y]
+[X = 12] [X = X - ASPD] [X = X  24] [ATK up by X] If [STR > 128] then [X = STR] [X = X - 128] [Y = X] [Y = Y / 2] [Y = Y + X] [Y = Y  -1] [ATK up by Y]
+[Y = INT] [Y = Y + DEX] [X = 0.01 * Y] [魔法貫通 up by X] オートスキル発動 MATK +6% If [Mage] then [Jan] 闇魔法威力 +10%
+[Y = 0] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [X = Y] [X = X  -3] [Y = Y  18] [A
+[X = 0.03 * Lv] [MaxMP up by X] If [STR > 300] then If [VIT > 300] then ATK +10% オートスキル発動 物理貫通 +8%
+[X = DEX] [ATK up by X]
+[X = STR] [X = X / 2] [ATK up by X] ASPD -60% オートスキル発動 MaxMP +500 MaxMP +1%
+[ATK up by STR] ASPD -60% オートスキル発動 +4% オートスキル発動 MaxMP +500 MaxMP +5%
+[ up by Lv] [ up by Lv] 闇耐性 -100% [X = ASPD] [X = X  -5] [ATK up by X] [X = X / 2] [MaxHP up by X] [MaxMP up by X]
+[X = Lv] [X = X / 2] [MATK up by X]
+[X = 1.05 * DEX] [DEF up by X] [X = 0.02 * DEX] [DEF up by X]
+[X = 1.10 * DEX] [DEF up by X] [X = 0.02 * DEX] [DEF up by X]
+[DEF up by DEX] [X = DEX] [X = X / 100] [DEF up by X]
+[Y = STR] [Y = Y + DEX] [X = 0.01 * Y] [物理貫通 up by X]
+[X = CRT] [X = X / 6] [X = X + 1] [ATK up by X] If [DEX > 200] then アイテムディレイ -1.0s
+If [Lv > 300] then 気絶発生 +0%
+If [Lv > 300] then 気絶発生 +0%
+if [Lv < 50] then 経験値 +20%
+[X = AGI] [X = X - DEX] If [X > 0] then [X = X  -1] [X = X + Lv] if [X < 0] then [X = 0] [ATK up by X] [Y = 0.08 * X] [ up by Y] オートスキル発動
+[X = Lv] [X = X  2] [HP自然回復 up by X] [X = Lv] [X = X / 4] [MP自然回復 up by X]
+[X = VIT] [X = X + AGI] [X = X / 2] [ATK up by X]
+[X = VIT] [X = X + AGI] [X = X  75] [X = X / 100] [ATK up by X]
+If [DEX > 200] then オートスキル発動 +5%
+If [DEX > 200] then オートスキル発動 +5%
+If [DEX > 200] then オートスキル発動 +8%
+[X = 3.00 * Lv] [魔法威力 up by X] MaxHP +14% ATK -35% 回避 -50% If [INT > 200] then MATK +24% オートスキル発動 +5% If [Mage] then 火属性に物理 +7% 水属性に物理 +7% 風属性に物理 +7% 地属性に物理 +7%
+[ up by Lv] [X = 0.20 * DEX] [DEX up by X] [X = 0.10 * AGI] [ up by X]
+[X = DEX] [X = X  5] [ up by X]
+[X = DEX] [X = X  15] [X = X / 10] [ up by X]
+[X = Lv] [X = X / 2] [ up by X]
+[ up by Lv]
+[ up by Lv]
+[ up by Lv]
+When equip [堕神の魔鎧] then MaxHP +10% MaxMP +10% ATK +6% スキルディレイ -0.5s アイテムディレイ -0.5s 物理貫通 +5% ヘイト増加 -20% 闇属性に物理 -90%
+[X = AGI] [Y = 0.50 * X] [ATK up by Y] オートスキル発動 [Sniper] 物理貫通 +15%
+[ up by Lv] [X = AGI] [Y = 0.60 * X] [ATK up by Y] オートスキル発動 [Sniper] 物理貫通 +15%
+[X = 0.01 * INT] [クリティカルダメージ up by X]
+[X = 0.04 * INT] [クリティカルダメージ up by X]
+[X = VIT] [X = X / 24] [魔法回避 up by X] オートスキル発動
+If [INT > 300] then スキルディレイ -1.0s
+[X = 0.02 * CRT] [魔法貫通 up by X] MATK +3% [Enchanter] オートスキル発動 +7% 魔法貫通 +10%
+[ up by DEX]
+[X = DEX] [Y = 0.03 * X] [火魔法威力 up by Y]
+If [AGI > 300] then INT +10 MATK +8% 回避 +10%
+If [AGI > 300] then INT +12 MATK +9% 回避 +15%
+[X = 0.01 * INT] [物理貫通 up by X] [魔法貫通 up by X] ATK +7% クリティカルダメージ +14% [ up by INT]
+If [STR > 300] then ATK +6% 絶対回避 +7%
+[ up by AGI]
+[X = AGI] [X = X  5] [ up by X]
+[ up by DEX] 絶対命中 +10%
+[X = DEX] [X = X  2] [ up by X] 絶対命中 +10%
+[魔法威力 up by Lv] 回避 -60% ATK -40% If [INT > 200] then MATK +10% If [Mage] then 火属性に物理 +5% 水属性に物理 +5% 風属性に物理 +5% 地属性に物理 +5% ASPD +10%
+[魔法威力 up by Lv] MaxHP +5% ATK -35% 回避 -50% If [INT > 200] then MATK +15% If [Mage] then 火属性に物理 +5% 水属性に物理 +5% 風属性に物理 +5% 地属性に物理 +5%
+[魔法威力 up by Lv] MaxHP +8% ATK -35% 回避 -50% If [INT > 200] then MATK +18% オートスキル発動 +5% If [Mage] then 火属性に物理 +5% 水属性に物理 +5% 風属性に物理 +5% 地属性に物理 +5%
+[Sniper] クリティカルダメージ +10% 物理貫通 +5%
+[X = Lv] [X = X  3] [HP自然回復 up by X] [X = Lv] [X = X / 3] [MP自然回復 up by X]
+[Unknown]
+[Unknown] MaxHP +1500
+[X = VIT] [X = X / 28] [魔法回避 up by X] オートスキル発動
+If [Lv > 200] then [Sniper] ATK +5% 魔法回避 +5% MP消費 -25%
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[X = 0.05 * Lv] [DEX up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[X = 0.05 * Lv] [DEX up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = DEX] [X = X / 2] [回避 up by X]
+[MATK up by Lv] 魔法貫通 +10% 絶対回避 -10% 魔法回避 -10%
+[Halloween] 攻撃間隔半減
+[X = Lv] [X = X / 2] [ATK up by X]
+[X = DEX] [Y = 0.04 * X] [火魔法威力 up by Y]
+[X = STR] [X = X + DEX] [X = X  -1] [ATK up by X] 射程 +5
+[X = VIT] [X = X / 32] [魔法回避 up by X] オートスキル発動
+[X = 384] [X = X - AGI] [Feb] [MP消費 up by X] ASPD = 1
+[X = 0.01 * INT] [物理貫通 up by X] [魔法貫通 up by X] ATK +8% クリティカルダメージ +15% [ up by INT]
+[X = 0.03 * DEX] [MaxHP up by X] [MaxMP up by X]
+[X = 0.05 * DEX] [MaxHP up by X] [MaxMP up by X]
+[X = 0.05 * DEX] [MaxHP up by X] [MaxMP up by X]
+[X = X / 100] スに物理 +20% スに魔法 +20%
+[X = X / 100] スに物理 +25% スに魔法 +25%
+[X = Lv] [X = X / 2] [ATK up by X] [ up by X] オートスキル発動
+[ATK up by Lv] [ up by Lv] オートスキル発動 絶対命中 +20%
+[X = 1.10 * Lv] [ATK up by X] [ up by X] 絶対命中 +20% オートスキル発動 +3% オートスキル発動
+[X = 1.50 * Lv] [ATK up by X] [ up by X] 絶対命中 +25% オートスキル発動 +8% オートスキル発動
+[X = 1.25 * Lv] [ATK up by X] [ up by X] 絶対命中 +20% オートスキル発動 +6% オートスキル発動
+[Sniper] ドロップ +2%
+If [DEX > 350] then CRT +3 オートスキル発動
+If [CRT > 300] then クリティカルダメージ +8% オートスキル発動
+If [CRT > 400] then クリティカルダメージ +12% オートスキル発動
+[X = 0.02 * Lv] [Jan] [X = 1] [ATK up by X] オートスキル発動 [Xmas] 攻撃間隔半減 ASPD +10%
+If [Lv > 100] then ATK +60 ATK +2%
+[Bishop] ヒール回復 +10% MDEF +10% 物理耐性 -10%
+If [Lv > 300] then 気絶発生 +0%
+If [Lv > 300] then 気絶発生 +0%
+[X = STR] MATK +30% ATK +30% [ATK up by Lv] [MATK up by Lv]
+If [Lv > 300] then [X = 0.04 * Lv] [魔法貫通 up by X] オートスキル発動 INT +5
+[ up by INT] [ up by INT]
+if [Lv < 50] then 経験値 +20%
+If [STR > 256] then MATK +6% If [VIT > 256] then 詠唱防御 +10% If [AGI > 256] then スキルディレイ -0.5s If [CRT > 256] then スペルバースト率 +5%
+If [STR > 256] then MATK +8% If [VIT > 256] then 詠唱防御 +12% If [AGI > 256] then スキルディレイ -0.7s If [CRT > 256] then スペルバースト率 +7%
+[Y = Lv] [Y = Y / 13] [Y = Y  Y] [X = 1000] [X = X - Y] [MP消費 up by X] ASPD -100%
+[X = INT] [Y = 0.04 * X] [風魔法威力 up by Y]
+[Bishop] ヒール回復 +13% INT +5 MDEF +11% 物理耐性 -10%
+[X = 0.04 * Lv] [光魔法威力 up by X]
+if [Lv < 50] then 経験値 +20%
+[ up by Lv] [X = 0.20 * INT] [X = CRT] [X = X / 15] If [X > 30] then [X = 30] [風魔法威力 up by X]
+[X = 0.04 * Lv] [X = X  -1] [X = X + -10] [全ダメージ軽減 up by X]
+[X = VIT] [X = X / 5] [MATK up by X] オートスキル発動 VIT +2
+If [Lv > 200] then [High Wizard] 無魔法威力 +5% 火魔法威力 +5% 水魔法威力 +5% 風魔法威力 +5% 地魔法威力 +5% 光魔法威力 +5% 闇魔法威力 +5%
+If [Lv > 200] then MATK +10%
+When equip [堕神の魔鎧] then MaxHP +10% MaxMP +10% MATK +8% スペルバースト率 +6% スに魔法 +2% 火魔法威力 +10% 水魔法威力 +10% 風魔法威力 +10% 地魔法威力 +10% If [Mage] then 闇魔法威力 +5% 光魔法威力 -90% 闇属性に物理 -90%
+[X = DEX] [X = X / 4] [MATK up by X]
+[MATK up by DEX]
+[X = DEX] [X = X / 3] [MATK up by X]
+[X = DEX] [X = X / 2] [MATK up by X]
+[MATK up by DEX]
+[MATK up by DEX]
+[X = 0.60 * VIT] [MATK up by X] VIT +3 オートスキル発動
+[MATK up by AGI] オートスキル発動
+[X = AGI] [X = X  2] [MATK up by X] オートスキル発動
+If [AGI > 256] then スペルバースト率 +3% 物理耐性 -20% オートスキル発動 [High Wizard] スペルバースト率 +6%
+[X = DEX] [X = X / 2] [詠唱時間 up by X] [High Wizard] スペルバースト率 +35%
+if [Lv < 50] then 経験値 +20%
+[Bishop] ヒール回復 +20% INT +8 MDEF +13% 物理耐性 -15%
+[X = 0.42 * CRT] [MATK up by X]
+[X = Lv] [X = X / 20] If [X > 15] then [X = 15] [X = X  -1] [MP消費 up by X]
+[July] [Aug] 火魔法威力 +7% 光魔法威力 +7% MATK +5% 詠唱時間 -15% 闇耐性 +5%
+[X = 0.02 * Lv] [X = X  -1] [X = X + -10] [全ダメージ軽減 up by X]
+[X = Lv] [X = X  Lv] [X = X / 100] [魔法威力 up by X]
+[X = Lv] [X = X  Lv] [X = X / 80] [魔法威力 up by X] MP自然回復 +25%
+[X = Lv] [X = X  Lv] [X = X / 50] [魔法威力 up by X] MP自然回復 +25%
+[X = Lv] [X = X / 10] If [X > 30] then [X = 30] [MATK up by X] [X = X / -2] [詠唱時間 up by X] MaxHP +1000 詠唱防御 +25%
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[Y = 0.05 * Lv] [AGI up by Y] 絶対回避 +10% 魔法回避 +10% オートスキル発動 +5%
+[Y = 0.05 * Lv] [VIT up by Y] MaxHP +15% MaxMP +15%
+[X = 0.05 * Lv] [DEX up by X]
+[Y = 0.05 * Lv] [STR up by Y] [ up by Lv]
+[Y = 0.05 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[Necromancer] MaxHP +30% MaxMP +30% INT +5
+[X = Lv] [X = X / 25] [MATK up by X]
+If [Lv > 300] then 火魔法威力 +10% 光魔法威力 +10%
+If [Lv > 300] then 火魔法威力 +10% 光魔法威力 +10%
+[Halloween] 攻撃間隔半減
+[X = Lv] [X = X / 2] [ATK up by X]
+[X = AGI] [X = X / 4] [MATK up by X]
+[X = 0.35 * AGI] [MATK up by X]
+[X = 0.35 * AGI] [MATK up by X]
+[X = 0.35 * AGI] [MATK up by X]
+[X = INT] [X = X / 30] [ASPD up by X]
+[X = INT] [X = X / 30] [ASPD up by X] [X = 0.04 * AGI] [詠唱時間 up by X] オートスキル発動 MaxHP +1500
+[Bishop] スキルディレイ -1.5s
+[X = 0.03 * INT] [詠唱防御 up by X]
+[X = 0.05 * INT] [詠唱防御 up by X]
+[X = 0.05 * INT] [詠唱防御 up by X]
+[X = X / 100] スに物理 +20% スに魔法 +20%
+[X = X / 100] スに物理 +25% スに魔法 +25%
+[Xmas] [X = 0.50 * Lv] [ up by X]
+[X = 200] [X = X - Lv] if [X < 0] then [X = 0] [反動ダメージ up by X] ASPD +140% 絶対回避 +10% オートスキル発動
+[X = 0.32 * CRT] [MATK up by X]
+if [Lv < 50] then 経験値 +20%
+[X = INT] [X = X / 8] [クリティカル率 up by X]
+[X = INT] [X = X / 8] [クリティカル率 up by X]
+[X = INT] [X = X / 8] [クリティカル率 up by X] オートスキル発動
+[X = 0.05 * Lv] [X = X  -1] [MP消費 up by X] オートスキル発動
+[X = 0.05 * Lv] [X = X  -1] [MP消費 up by X] オートスキル発動
+If [Mage] then 物理耐性 +10% 魔法耐性 +10% 火魔法威力 +10% 無魔法威力 +10%
+[X = STR] MATK +35% ATK +35% [ATK up by Lv] [MATK up by Lv]
+[Unknown] オートスキル発動 +10%
+[X = 0.04 * Lv] [光魔法威力 up by X]
+If [Lv > 300] then [X = 0.04 * DEX] [闇魔法威力 up by X] オートスキル発動
+[MATK up by Lv]
+[MATK up by Lv]
+[MATK up by Lv]
+[X = 0.50 * VIT] [MATK up by X] VIT +2 オートスキル発動
+[X = 4.00 * INT] [ up by X] MaxHP +1500 VIT +6 オートスキル発動 If [Mage] then [Jan] 無魔法威力 +6% 火魔法威力 +6% 水魔法威力 +6% 風魔法威力 +6% 地魔法威力 +6% 光魔法威力 +6% 闇魔法威力 +6% [X = 0.04 * Lv] [魔法貫通 up by X] MATK +2%
+[Monk] オートスキル発動 +10%
+[Monk] オートスキル発動 +10% 毒効果 +1000%
+If [Lv > 300] then 気絶発生 +0%
+If [Lv > 300] then 気絶発生 +0%
+If [Lv > 250] then オートスキル発動 +4%
+[X = Lv] [X = X / 5] [X = X + CRT] [ up by X]
+if [Lv < 50] then 経験値 +20%
+[X = Lv] [X = X / 50] [CRT up by X]
+If [STR > 256] then 麻痺持続 +3.0s
+[Y = Lv] [Y = Y + DEX] [Y = Y + CRT] [ up by Y] [Y = 0.03 * AGI] [オートスキル発動 up by Y] 魔法耐性 -5%
+if [VIT < 128] then ヘイト増加 -20%
+if [VIT < 128] then ヘイト増加 -25%
+if [VIT < 128] then ヘイト増加 -25%
+[X = INT] [X = X / 25] [クリティカルダメージ up by X]
+[X = 0.75 * Lv] [ATK up by X] If [DEX > 256] then 毒発生 +10%
+[X = 0.75 * Lv] [ATK up by X] If [DEX > 256] then 毒発生 +10% オートスキル発動
+[X = 1.10 * Lv] [ATK up by X] If [DEX > 256] then 毒発生 +10% オートスキル発動
+[ up by CRT]
+[ATK up by VIT] オートスキル発動
+[X = 1.10 * VIT] [ATK up by X] オートスキル発動
+[ up by AGI] MaxHP +15% ヒール回復 +15% 魔法耐性 -15%
+[ up by AGI] MaxHP +15% ヒール回復 +15% 魔法耐性 -15% MATK +5%
+[ up by AGI] MATK +10% MaxHP +20% ヒール回復 +20% 魔法耐性 -15% オートスキル発動
+[X = AGI] [X = X  5] [ up by X] MATK +17% MaxHP +25% ヒール回復 +35% 魔法耐性 -15% オートスキル発動
+When equip [デュエルシルト][デュエルシルト(強化版)][デュエルシルト(再強化版)][デュエルシルト(再々強化版)] then オートスキル発動 オートスキル発動
+[X = INT] [X = X / 2] [ATK up by X] オートスキル発動 魔法耐性 -10%
+[X = Lv] [X = X  2] [ヒール受け up by X] 魔法耐性 -20% オートスキル発動 [Monk] オートスキル発動 -13%
+[X = Lv] [X = X  250] [X = X / 100] [ヒール受け up by X] AGI +2 範囲軽減 +10% 魔法耐性 -20% オートスキル発動 [Monk] オートスキル発動 -7%
+[X = 3.50 * Lv] [ヒール受け up by X] 絶対回避 +8% MaxHP +5% 魔法耐性 -15% 範囲軽減 +15% AGI +5 オートスキル発動 [Monk] オートスキル発動 -7%
+[X = 6.00 * Lv] [ヒール受け up by X] 絶対回避 +9% MaxHP +15% 魔法耐性 -15% 範囲軽減 +25% AGI +30 オートスキル発動 [Monk] オートスキル発動 -14% オートスキル発動 +7%
+When equip [堕神の魔鎧] then MaxHP +10% MaxMP +10% ATK +6% クリティカルダメージ +6% [Monk] シェルブレイク率 +5% オートスキル発動 闇属性に物理 -90% [Monk] シェルブレイク率 +5%
+[X = 0.50 * DEX] [ATK up by X] 絶対命中 +20% 絶対回避 -20% 魔法回避 -20% 魔法耐性 -20%
+[Ninja] STR +10 オートスキル発動
+[X = 0.20 * INT] [ATK up by X]
+[X = Lv] [X = X + DEX] [X = X / 2] [X = X + CRT] [ up by X] [X = 0.02 * AGI] [オートスキル発動 up by X] 魔法耐性 -5%
+[Monk] シェルブレイク率 +5% ATK +2% オートスキル発動 -15%
+[Monk] シェルブレイク率 +8% ATK +5% オートスキル発動 -15%
+[Monk] シェルブレイク率 +8% ATK +5% オートスキル発動 -15%
+[X = 0.02 * INT] [MaxHP up by X] オートスキル発動
+[X = 0.30 * CRT] [MATK up by X] オートスキル発動
+When equip [デュエルシルト][デュエルシルト(強化版)][デュエルシルト(再強化版)][デュエルシルト(再々強化版)] then オートスキル発動 オートスキル発動
+[X = 0.02 * AGI] [絶対回避 up by X] オートスキル発動 [Monk] 物理貫通 +4%
+[X = 1.50 * CRT] [MATK up by X] オートスキル発動 凍結発生 +5%
+[X = 0.50 * CRT] [MATK up by X] オートスキル発動
+[X = Lv] [X = X / 2] [ up by X]
+[X = Lv] [X = X / 2] [ up by X]
+[ up by Lv]
+[ up by CRT] 無属性に物理 +2%
+[X = 1.50 * CRT] [ up by X]
+[X = 1.75 * CRT] [ up by X]
+If [AGI > 200] then +400 光魔法威力 +5%
+[Monk] シェルブレイク率 +8%
+[Monk] シェルブレイク率 +10%
+[Monk] シェルブレイク率 +10%
+[X = 0.04 * AGI] [ATK up by X] 魔法耐性 -10% オートスキル発動
+[X = 0.03 * AGI] [ATK up by X] 魔法耐性 -12% オートスキル発動
+[Monk] 毒効果 +500%
+[Monk] シェルブレイク率 +5%
+[Monk] シェルブレイク率 +8%
+[X = Lv] [X = X  259] [X = X / 100] [ up by X] MaxMP +10% [Monk] シェルブレイク率 +10%
+[X = Lv] [X = X / 2] [ up by X] オートスキル発動
+[ up by Lv] オートスキル発動
+[X = 2.00 * Lv] [ up by X] オートスキル発動
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [DEX up by X]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[Monk] 毒効果 +500%
+[X = Lv] [X = X  15] [ up by X] オートスキル発動 ASPD = 1 [Monk] シェルブレイク率 +5%
+[X = Lv] [X = X  11] [ up by X] オートスキル発動 ASPD = 1
+[X = 0.04 * INT] [クリティカルダメージ up by X] MP自然回復 +25%
+[Halloween] 攻撃間隔半減
+[X = Lv] [X = X / 2] [ATK up by X]
+[DEF up by STR] ASPD = 1
+[X = 1.10 * STR] [DEF up by X] ASPD = 1
+[X = 1.20 * STR] [DEF up by X] ASPD = 1
+[X = 0.06 * Lv] [CRT up by X]
+[X = 0.03 * AGI] [ヒール回復 up by X]
+[X = 0.05 * AGI] [ヒール回復 up by X]
+[X = 0.05 * AGI] [ヒール回復 up by X]
+[X = X / 100] スに物理 +20% スに魔法 +20%
+[X = X / 100] スに物理 +25% スに魔法 +25%
+[X = AGI] [X = X  2] [ヒール受け up by X] HP自然回復 +20% 魔法耐性 -20% オートスキル発動
+[X = 3.00 * AGI] [ヒール受け up by X] HP自然回復 +30% 魔法耐性 -20% オートスキル発動
+[X = 3.50 * AGI] [ヒール受け up by X] HP自然回復 +30% 魔法耐性 -20% 無魔法威力 +10% オートスキル発動
+[X = 4.50 * AGI] [ヒール受け up by X] HP自然回復 +30% 魔法耐性 -20% 無魔法威力 +20% オートスキル発動
+[X = DEX] [X = X + CRT] [X = X / 2] [ATK up by X] [X = Lv] [X = X + VIT] [X = X / 30] If [X > 25] then [X = 25] [クリティカル率 up by X] [クリティカルダメージ up by X]
+[X = DEX] [X = X + CRT] [ATK up by X] [X = Lv] [X = X + VIT] [X = X / 30] [クリティカル率 up by X] [クリティカルダメージ up by X]
+[X = INT] [Y = 0.04 * X] [ヒール受け up by Y]
+[X = INT] [Y = 0.05 * X] [ヒール受け up by Y] [Monk] シェルブレイク率 +10%
+[X = INT] [Y = 0.05 * X] [ヒール受け up by Y] [Monk] シェルブレイク率 +10%
+[X = VIT] [X = X + INT] [X = X / 2] [ATK up by X]
+[X = VIT] [X = X + INT] [X = X  75] [X = X / 100] [ATK up by X]
+[X = Lv] [X = X  9] [ up by X] オートスキル発動 ASPD = 1
+[Unknown] オートスキル発動 +10%
+[X = 0.50 * Lv] [Jan] [X = 1] [ up by X] オートスキル発動 [Xmas] 攻撃間隔半減 魔法耐性 +3%
+[ up by CRT]
+[X = 0.05 * INT] [クリティカルダメージ up by X] MP自然回復 +25%
+When equip [デュエルシルト][デュエルシルト(強化版)][デュエルシルト(再強化版)][デュエルシルト(再々強化版)] then オートスキル発動 オートスキル発動 ATK +15% オートスキル発動 +8%
+[Minstrel] ヘイト増加 -40% HP自然回復 +300 MP自然回復 +300
+[X = Lv] [X = X - VIT] If [X > 444] then [X = 444] if [X < 1] then [X = 1] [ATK up by X]
+[X = 0.02 * Lv] [INT up by X] オートスキル発動
+[Y = 0.05 * Lv] [INT up by Y] オートスキル発動
+[X = AGI] [Y = 0.03 * X] [クリティカルダメージ up by Y]
+[X = AGI] [Y = 0.04 * X] [クリティカルダメージ up by Y]
+[X = 0.01 * DEX] [物理貫通 up by X] ATK +4% +400
+[X = 0.01 * DEX] [物理貫通 up by X] ATK +5% +500
+If [Lv > 300] then 気絶発生 +0%
+If [Lv > 300] then 気絶発生 +0%
+if [Lv < 50] then 経験値 +20%
+[MATK up by AGI] スキルディレイ +1.0s 詠唱時間 -30% 水魔法威力 +20% 移動速度 +5%
+[Assassin] クリティカルダメージ +10% ATK +10%
+If [DEX > 200] then 物理貫通 +5%
+[X = 0.04 * INT] [物理貫通 up by X] 絶対回避 +15% 魔法回避 +15% スキルディレイ -1.0s オートスキル発動
+If [STR > 400] then ATK +8%
+If [STR > 400] then ATK +5%
+[MaxMP up by Lv] クリティカルダメージ +1%
+[X = 0.02 * AGI] [回避時反撃率 up by X] オートスキル発動
+[X = 0.04 * AGI] [回避時反撃率 up by X] 魔法回避 +5% オートスキル発動
+When equip [堕神の魔鎧] then MaxHP +10% MaxMP +10% ATK +4% MATK +4% クリティカルダメージ +8% 光魔法威力 -90% 闇属性に物理 -90%
+[X = 0.15 * STR] [ATK up by X]
+[X = 0.25 * STR] [ATK up by X]
+[X = 0.30 * STR] [ATK up by X]
+[Xmas] [X = 0.50 * Lv] [ up by X]
+[X = Lv] [X = X / 2] [クリティカル率 up by X] オートスキル発動
+If [DEX > 300] then 物理貫通 +10% 魔法貫通 +10% オートスキル発動
+[ATK up by Lv] [Unknown] スに物理 +10%
+[Assassin] [Ninja] [ up by Lv]
+[Assassin] [Ninja] [X = Lv] [X = X / 2] [X = X + Lv] [ up by X]
+[Assassin] [Ninja] [X = Lv] [X = X / 2] [X = X + Lv] [ up by X]
+[Assassin] [Ninja] [X = Lv] [X = X  3] [ up by X]
+[Assassin] クリティカルダメージ +17%
+If [Lv > 200] then 絶対回避 +3% [Ninja] 絶対回避 +5%
+[Assassin] [X = 0.25 * DEX] [ATK up by X]
+[Assassin] [X = 0.30 * DEX] [ATK up by X]
+[X = 0.05 * AGI] If [X > 15] then [X = 15] [絶対回避 up by X]
+[X = 0.05 * AGI] If [X > 15] then [X = 15] [絶対回避 up by X]
+[MaxMP up by Lv] 異常耐性 +10% スキルディレイ -1.0s オートスキル発動 クリティカルダメージ +5%
+[MaxMP up by Lv] スキルディレイ -0.5s
+[MaxMP up by Lv] スキルディレイ -0.8s
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+[X = 0.05 * Lv] [DEX up by X]
+[X = 0.05 * Lv] [AGI up by X]
+[X = 0.05 * Lv] [VIT up by X]
+[X = 0.05 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.05 * Lv] [STR up by X] [ up by Lv]
+If [DEX > 300] then 物理貫通 +12% 魔法貫通 +12%
+[X = Lv] [X = X  2] [ up by X] 魔法回避 +7% オートスキル発動
+[X = 2.50 * Lv] [ up by X] 魔法回避 +8% オートスキル発動
+[X = 3.00 * Lv] [ up by X] 魔法回避 +12% 物理貫通 +5% オートスキル発動
+[X = Lv] [X = X / 2] [ATK up by X] オートスキル発動
+[Halloween] 攻撃間隔半減
+[Y = 0.01 * VIT * 100] If [Y > 500] then [Y = 500] [Mystery]
+[Y = 0.01 * VIT * 100] If [Y > 500] then [Y = 500] [Mystery]
+If [AGI > 300] then ATK +12%
+If [AGI > 400] then ATK +18%
+[X = 0.02 * CRT] [クリティカルダメージ up by X]
+[X = 0.03 * CRT] [クリティカルダメージ up by X]
+[X = 0.03 * CRT] [クリティカルダメージ up by X]
+[X = X / 100] スに物理 +20% スに魔法 +20%
+[X = X / 100] スに物理 +25% スに魔法 +25%
+If [STR > 400] then ATK +5% If [INT > 400] then スキルディレイ -1.0s 麻痺発生 +2%
+[X = Lv] [X = X - VIT] If [X > 400] then [X = 400] if [X < 1] then [X = 1] [ATK up by X]
+[X = Lv] [X = X - VIT] If [X > 400] then [X = 400] if [X < 1] then [X = 1] [ATK up by X]
+[X = AGI] [X = X  3] [ up by X] オートスキル発動
+[X = AGI] [X = X  4] [ up by X] [MaxHP up by Lv] オートスキル発動
+[Y = MaxHP] [Y = Y  2] [Y = Y / 10000] [Paladin] [Y = Y / 4] If [Y > 15] then [Y = 15] if [Y < 1] then [Y = 1] [物理耐性 up by Y] [魔法耐性 up by Y] ヒール受け +5% オートスキル発動 無属性に物理 +10%
+[X = STR] [X = X + DEX] [X = X / 2] [ATK up by X]
+[X = 0.03 * INT] [クリティカルダメージ up by X] オートスキル発動 物理耐性 -10%
+[Unknown] [X = Lv] [X = X / 25] [DEF up by X] MaxHP +1000 If [Lv > 200] then MaxHP +1000
+[Unknown] [X = Lv] [X = X / 25] [DEF up by X] MaxHP +2000 [MaxMP up by Lv] 物理耐性 +10% 魔法耐性 +10% If [Lv > 350] then ATK +17%
+[ATK up by STR] [MATK up by INT] オートスキル発動
+[X = 1.20 * STR] [ATK up by X] [X = 1.20 * INT] [MATK up by X] オートスキル発動
+If [Lv > 50] then DEF +40 MDEF +80 VIT +2 INT +2 オートスキル発動 DEF +20 MDEF +40 VIT +1 INT +1 オートスキル発動 オートスキル発動 -5%
+[X = VIT] [X = X / 5] [X = X - 30] If [X > 30] then [X = 30] [ヘイト増加 up by X]
+[X = VIT] [X = X / 5] [X = X - 30] If [X > 30] then [X = 30] [ヘイト増加 up by X]
+If [Lv > 300] then [X = 0.02 * VIT] [物理耐性 up by X] [X = 0.02 * INT] [魔法耐性 up by X]
+When equip [ウォルンタス][ウォルンタス(強化版)][ウォルンタス(再強化版)] then [X = Lv] [X = X / 15] [ATK up by X] [MATK up by X] MaxHP +500 MaxMP +250 射程 +1
+When equip [ウォルンタス][ウォルンタス(強化版)][ウォルンタス(再強化版)] then [X = Lv] [X = X / 10] [ATK up by X] [MATK up by X] MaxHP +500 MaxMP +250 射程 +1
+When equip [ウォルンタス][ウォルンタス(強化版)][ウォルンタス(再強化版)] then [X = Lv] [X = X / 5] [ATK up by X] [MATK up by X] MaxHP +800 MaxMP +400 射程 +1
+When equip [ウォルンタス][ウォルンタス(強化版)][ウォルンタス(再強化版)] then [X = Lv] [X = X / 4] [ATK up by X] [MATK up by X] MaxHP +1500 MaxMP +500 射程 +1
+When equip [堕神の魔剣][堕神の魔弓][堕神の魔爪][堕神の魔杖][堕神の魔円] then スキルディレイ -1.0s 物理耐性 +10% 魔法耐性 +10% クリティカルダメージ +10%
+[Swords] クリティカルダメージ +28% ATK +12%
+[X = Lv] [MaxHP up by X] [X = X / 4] [MaxMP up by X] 命中 +30 回避 +15 オートスキル発動
+[MaxHP up by Lv] [X = 0.25 * Lv] [MaxMP up by X] クリティカル率 +20 オートスキル発動 命中 +30 回避 +15 ダメージ反射 +5%
+[MaxHP up by Lv] [X = 0.50 * Lv] [MaxHP up by X] [MaxMP up by X] オートスキル発動 命中 +50 回避 +20 ダメージ反射 +10%
+[MaxHP up by Lv] [X = 1.50 * Lv] [MaxHP up by X] [MaxMP up by X] オートスキル発動 命中 +50 回避 +20 ダメージ反射 +10%
+[魔法威力 up by Lv]
+[X = 1.50 * Lv] [魔法威力 up by X]
+[X = 2.00 * Lv] [魔法威力 up by X]
+[X = 3.00 * Lv] [魔法威力 up by X]
+[X = Lv] [X = X / 2] [ up by X]
+[ up by Lv]
+[X = 2.00 * Lv] [ up by X]
+[X = 3.00 * Lv] [ up by X]
+[X = Lv] [X = X / 2] [DEF up by X] [MDEF up by Lv] 物理耐性 +5% 魔法耐性 +5% スキルディレイ -0.5s アイテムディレイ -0.5s オートスキル発動
+[X = 0.55 * Lv] [DEF up by X] [X = 1.05 * Lv] [MDEF up by X] 物理耐性 +7% 魔法耐性 +7% スキルディレイ -0.5s アイテムディレイ -0.5s オートスキル発動
+[X = 0.60 * Lv] [DEF up by X] [X = 1.20 * Lv] MaxHP +8% [MDEF up by X] 物理耐性 +8% 魔法耐性 +8% スキルディレイ -0.7s アイテムディレイ -0.7s オートスキル発動
+[X = 0.60 * Lv] [DEF up by X] [X = 1.20 * Lv] MaxHP +10% [MDEF up by X] 物理耐性 +14% 魔法耐性 +14% スキルディレイ -1.2s アイテムディレイ -1.2s オートスキル発動
+[魔法威力 up by Lv] オートスキル発動
+If [Mage] then スペルバースト率 +5%
+If [INT > 200] then オートスキル発動 +3%
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[Y = 0.04 * Lv] [INT up by Y] [X = 4.00 * Lv] [魔法威力 up by X]
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [DEX up by X]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [DEX up by X]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[X = 0.04 * Lv] [DEX up by X]
+[X = 0.04 * Lv] [AGI up by X]
+[X = 0.04 * Lv] [VIT up by X]
+[X = 0.04 * Lv] [INT up by X] [Y = 4.00 * Lv] [魔法威力 up by Y]
+[X = 0.04 * Lv] [DEX up by X]
+[X = 0.04 * Lv] [STR up by X] [ up by Lv]
+[X = STR] [X = X / 2] [CRT up by X] [X = X  -1] [STR up by X]
+If [Warrior] then [Jan] 物理貫通 +5%
+If [Warrior] then [Jan] 物理貫通 +10%
+[X = Lv] [X = X / 40] [ATK up by X] [MATK up by X]
+[Swords] クリティカル率 +10
+[X = Lv] [X = X / 10] [ up by X] [Swords] クリティカル率 +12 クリティカルダメージ +2%
+[X = 0.20 * Lv] [ up by X] [Swords] クリティカル率 +22 クリティカルダメージ +4%
+[X = 0.30 * Lv] [ up by X] [Swords] クリティカル率 +25 クリティカルダメージ +5%
+[Throwing] スキルディレイ -0.5s
+[Throwing] スキルディレイ -0.7s [X = Lv] [X = X / 10] [MATK up by X]
+[Throwing] スキルディレイ -1.5s [X = 0.20 * Lv] [MATK up by X]
+[Throwing] スキルディレイ -1.7s [X = 0.30 * Lv] [MATK up by X]
+[Swords] [Canes] [Throwing] [X = 0.06 * VIT * 100] If [X > 700] then [X = 700] [MATK up by X]
+[Swords] [Canes] [Throwing] [X = 0.06 * VIT * 100] If [X > 700] then [X = 700] [MATK up by X]
+[Swords] [Canes] [Throwing] [X = 0.06 * VIT * 100] If [X > 700] then [X = 700] [MATK up by X]
+[Assassin] 毒効果 +90% 毒持続 +5.0s
+[X = DEX] [X = X  10] If [X > 3000] then [X = 3000] [MaxHP up by X]
+[X = INT] [X = X - VIT] [Jan] [X = 1] [X = X  X] [X = X / 26] [MaxHP up by X]
+[X = INT] [X = X - VIT] [Jan] [X = 1] [X = X  X] [X = X / 22] [X = X + 45] [MaxHP up by X] オートスキル発動 +2%
+[X = INT] [X = X - VIT] [Jan] [X = 1] [X = X  X] [X = X / 20] [X = X + 100] [MaxHP up by X] オートスキル発動 +5%
+[Canes] MATK +5% ヒール回復 +5% 詠唱時間 -3% MATK +7% 魔法耐性 +6% 無魔法威力 +7% 火魔法威力 +7% 水魔法威力 +7% 風魔法威力 +7% 地魔法威力 +7% 光魔法威力 +7% 闇魔法威力 +7% 絶対回避 +10% 闇耐性 +5% 詠唱防御 -50%
+[Anniversary] HP自然回復 +100% MP自然回復 +100%
+[Bows] 命中 +10% ATK +10 DEX +1 命中 +2%
+[X = Lv] [X = X  2] [MaxHP up by X] [X = X / 4] [MaxMP up by X]
+If [DEX > 256] then クリティカルダメージ +2%
+If [Lv > 250] then [X = INT] [Y = 0.02 * X] [Y = Y  -1] [ヘイト増加 up by Y] 凍結発生 +10%
+If [Lv > 300] then [X = INT] [Y = 0.04 * X] [Y = Y  -1] [ヘイト増加 up by Y] 凍結発生 +10%
+[Bows] ATK +3% 射程 +1 魔法回避 +3% DEX +30 AGI +20 回避 +50% 魔法回避 +12% クリティカル率 +10 クリティカルダメージ +10% 風耐性 +10% オートスキル発動
+[Swords] if [ASPD < 3] then クリティカルダメージ +12%
+[Swords] if [ASPD < 3] then クリティカルダメージ +25%
+If [STR > 200] then ATK +5% ヘイト増加 +15% オートスキル発動
+If [STR > 200] then ATK +12% ヘイト増加 +15% 物理貫通 +5% オートスキル発動
+if [Lv < 250] then 反動ダメージ +30%
+if [Lv < 250] then 反動ダメージ +30%
+If [CRT > 256] then オートスキル発動 +10% オートスキル発動
+If [Lv > 200] then MaxHP +5% AGI +5
+[Throwing] ATK +2% MATK +2% ASPD +10%
+[Throwing] ATK +2% MATK +2% ASPD +10%
+[Throwing] ATK +3% MATK +3% ASPD +10%
+[Additional] INT +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+[Additional] INT +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+If [STR > 256] then 反動ダメージ -30% クリティカルダメージ +10%
+[X = 0.10 * CRT] [ATK up by X] [X = 0.50 * AGI] [MATK up by X]
+[X = AGI] [X = X / 20] [ATK up by X] ATK +2% 回避 +20 MaxHP -3% MP自然回復 -10% オートスキル発動
+[X = 0.06 * AGI] [ATK up by X] MP自然回復 -10% オートスキル発動 オートスキル発動 +2%
+[X = 0.15 * AGI] [ATK up by X] MP自然回復 -10% オートスキル発動 オートスキル発動 +2%
+[X = 0.75 * AGI] [ATK up by X]
+If [Lv > 50] then 物理耐性 +8% 魔法耐性 +8% 回避 +10 物理耐性 +4% 魔法耐性 +4% 回避 +5
+If [DEX > 200] then 回避時反撃率 +5% 絶対回避 +6% 魔法回避 +6%
+If [DEX > 200] then 回避時反撃率 +15% 絶対回避 +6% 魔法回避 +6%
+[Xmas] ドロップ +50% オートスキル発動
+[Xmas] クリティカル率 +10 クリティカルダメージ +10%
+[X = 0.60 * INT] [DEF up by X] [X = 0.80 * VIT] [MDEF up by X]
+[X = 0.60 * INT] [DEF up by X] [MDEF up by VIT]
+[X = 0.60 * INT] [DEF up by X] [MDEF up by VIT] [X = INT] [X = X + VIT] [X = X / 100] [MaxHP up by X]
+[Additional] VIT +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+[Additional] VIT +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+If [Lv > 250] then 水魔法威力 +10%
+if [X < 0] then [Unknown Condition] MaxHP +1000 MaxMP +500
+If [AGI > 200] then 魔法回避 +5%
+If [AGI > 200] then 魔法回避 +7%
+If [AGI > 200] then 魔法回避 +9%
+[X = Lv] [X = X  2] [ヒール受け up by X] 範囲軽減 +12% [Claws] ATK +4% ASPD +100%
+[X = Lv] [X = X / 4] [MaxMP up by X]
+if [X < 0] then [Unknown Condition] ヒール回復 +15%
+[X = Lv] [X = X / 2] [MaxHP up by X] [MaxMP up by X] オートスキル発動
+[X = Lv] [MaxHP up by X] [MaxMP up by X] オートスキル発動
+[X = 3.00 * Lv] [MaxHP up by X] [MaxMP up by X] オートスキル発動
+If [Lv < 300] then MP消費 +50% [High Wizard] 無魔法威力 +2% 火魔法威力 +2% 水魔法威力 +2% 風魔法威力 +2% 地魔法威力 +2% 光魔法威力 +2% 闇魔法威力 +2%
+If [Lv < 300] then MP消費 +50% [High Wizard] 無魔法威力 +2% 火魔法威力 +2% 水魔法威力 +2% 風魔法威力 +2% 地魔法威力 +2% 光魔法威力 +2% 闇魔法威力 +2%
+[X = INT] INT -100 STR +50
+if [X < 0] then [Unknown Condition] 光耐性 +5% ドロップ +5%
+If [DEX > 250] then スキルディレイ -0.5s If [Lv > 250] then [X = DEX] [Y = 0.02 * X] [ヘイト増加 up by Y]
+If [DEX > 250] then スキルディレイ -0.7s 絶対回避 +5% MaxMP +7% If [Lv > 250] then [X = DEX] [Y = 0.03 * X] [ヘイト増加 up by Y]
+When equip [リヒトアーマー][リヒトアーマー(強化版)][リヒトアーマー(再強化版)][リヒトアーマー(再々強化版)] then 物理耐性 +5% 魔法耐性 +5% 割合軽減 +10% オートスキル発動
+When equip [リヒトアーマー][リヒトアーマー(強化版)][リヒトアーマー(再強化版)][リヒトアーマー(再々強化版)] then 物理耐性 +8% 魔法耐性 +8% 割合軽減 +12% オートスキル発動
+When equip [リヒトアーマー][リヒトアーマー(強化版)][リヒトアーマー(再強化版)][リヒトアーマー(再々強化版)] then 物理耐性 +10% 魔法耐性 +10% 割合軽減 +12% オートスキル発動
+[X = 0.04 * Lv] [DEX up by X] オートスキル発動 If [Mage] then [Jan] [X = INT] [Y = 0.20 * X] [MATK up by Y]
+[X = 0.05 * Lv] [DEX up by X] オートスキル発動 If [Mage] then [Jan] [X = INT] [Y = 0.30 * X] [MATK up by Y]
+[X = 0.10 * Lv] [DEX up by X] オートスキル発動 If [Mage] then [Jan] [X = INT] [Y = 0.50 * X] [MATK up by Y]
+If [STR > 222] then ヒール回復 +5% 火魔法威力 +1% 水魔法威力 +1% 風魔法威力 +1% 地魔法威力 +1% If [INT > 222] then ヒール回復 +5% 火魔法威力 +1% 水魔法威力 +1% 風魔法威力 +1% 地魔法威力 +1% If [VIT > 222] then ヒール回復 +5% 火魔法威力 +1% 水魔法威力 +1% 風魔法威力 +1% 地魔法威力 +1% If [AGI > 222] then ヒール回復 +5% 火魔法威力 +1% 水魔法威力 +1% 風魔法威力 +1%
+If [Warrior] then ATK +10% 魔法耐性 -30%
+When equip [エアオブザダーク] then 魔法貫通 +10%
+If [STR > 300] then アイテムディレイ -0.5s アイテム回復 +10%
+[White Day] オートスキル発動
+[White Day] オートスキル発動
+If [Mage] then MATK +4% スキルディレイ -0.4s
+If [Mage] then スキルディレイ -0.4s
+[Y = 4.00 * Lv] [MaxHP up by Y] [MaxMP up by Lv]
+[Y = 6.00 * Lv] [MaxHP up by Y] [MaxMP up by Lv]
+[X = 0.03 * Lv] [無耐性 up by X] オートスキル発動
+[X = 0.04 * Lv] [無耐性 up by X] オートスキル発動
+[X = INT] [X = X / 2] [MATK up by X] [MaxMP up by Lv]
+[X = VIT] [X = X / 2] [X = X + VIT] [Y = INT] [Y = Y / 2] [X = X - Y] if [X < 0] then [X = 0] [MDEF up by X]
+[X = VIT] [X = X / 2] [X = X + VIT] [Y = INT] [Y = Y / 3] [X = X - Y] if [X < 0] then [X = 0] [MDEF up by X]
+[X = VIT] [X = X / 2] [X = X + VIT] [Y = INT] [Y = Y / 3] [X = X - Y] if [X < 0] then [X = 0] [MDEF up by X]
+[Claws] クリティカルダメージ +3% 絶対回避 +3% 魔法耐性 +5% VIT +7 AGI +25 CRT +18 クリティカルダメージ +10% 火魔法威力 +15% 火耐性 +10% オートスキル発動
+[Bows] ATK +5%
+[X = Lv] [X = X / 13] [MaxHP up by X]
+[X = Lv] [X = X / 12] [MaxHP up by X]
+[X = Lv] [X = X / 11] [MaxHP up by X]
+[Swords] ATK +5% DEF +2% オートスキル発動 +2% MaxHP +35% [DEF up by Lv] 物理耐性 +7% ヒール受け +10% 地耐性 +10% オートスキル発動
+When equip [堕神の魔鎧] then MaxHP +10% MaxMP +10% MATK +6% 詠唱時間 -10% スペルバースト率 +2%
+When equip [堕神の魔鎧] then MaxHP +10% MaxMP +10% ATK +6% クリティカルダメージ +5%
+[X = AGI] [Y = 0.50 * X] [MDEF up by Y] オートスキル発動
+[X = AGI] [Y = 0.55 * X] [MDEF up by Y] オートスキル発動
+[ up by Lv]
+[ up by Lv] If [Lv > 200] then アイテムディレイ -0.5s
+[ up by Lv] MP自然回復 +50 If [Lv > 200] then アイテムディレイ -0.5s
+[Swords] ATK +5% DEF +2% ASPD +10%
+[X = 0.15 * AGI] [ATK up by X] [MATK up by X] MaxMP +10% 物理耐性 -5% 魔法耐性 -5% ASPD -20%
+[X = 0.03 * CRT] [オートスキル発動 up by X]
+[X = 0.04 * CRT] [オートスキル発動 up by X]
+If [Lv > 256] then MaxHP +14% 絶対回避 -10% 魔法回避 -10%
+If [CRT > 300] then 物理貫通 +10%
+If [CRT > 300] then 物理貫通 +10%
+[Unknown Condition] 水耐性 +10% オートスキル発動
+If [Lv > 140] then オートスキル発動
+If [Lv > 140] then オートスキル発動
+If [Lv > 280] then オートスキル発動
+[X = AGI] [X = X / 2] [回避 up by X] 魔法回避 +10% MaxHP -20% 光耐性 -50% 魔法耐性 -25%
+[X = 0.75 * AGI] [回避 up by X] 魔法回避 +15% MaxHP -10% 光耐性 -20% 魔法耐性 -15% オートスキル発動
+[White Day] アイテムディレイ -1.0s
+[X = 0.04 * AGI] [魔法耐性 up by X] オートスキル発動
+[X = 0.04 * AGI] [魔法耐性 up by X] オートスキル発動
+If [VIT > 128] then ダメージ反射 +8%
+If [VIT > 128] then ダメージ反射 +10%
+If [VIT > 128] then ダメージ反射 +13%
+If [Lv > 200] then ATK +5% MATK +5% 物理耐性 +5% 魔法耐性 +5% オートスキル発動 +5% 闇耐性 -5%
+if [Lv < 300] then 反動ダメージ +30%
+if [Lv < 300] then 反動ダメージ +30%
+[Canes] MATK +5% ヒール回復 +5% 詠唱時間 -3% INT +9 ヘイト増加 -30% ヒール回復 +35% 詠唱時間 +20% 範囲軽減 +15% 光耐性 +9%
+[X = DEX] [X = X  2] [MaxHP up by X]
+[X = DEX] [X = X / 2] [X = X  5] [MaxHP up by X]
+[X = 3.50 * DEX] [MaxHP up by X]
+If [DEX > 300] then スキルディレイ -1.5s
+[X = INT] [X = X  10] [X = X / 15] [Y = VIT] [Y = Y / 2] [X = X - Y] [Feb] [DEF up by X]
+[X = INT] [X = X  10] [X = X / 15] [Y = VIT] [Y = Y / 3] [X = X - Y] [Feb] [DEF up by X]
+[X = INT] [X = X  10] [X = X / 15] [Y = VIT] [Y = Y / 3] [X = X - Y] [Feb] [DEF up by X]
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then ATK +10 MATK +10 クリティカル率 +10 クリティカルダメージ +2%
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then ATK +10 MATK +10 クリティカル率 +10 クリティカルダメージ +2%
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then ATK +50 MATK +50 クリティカル率 +30 クリティカルダメージ +5%
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then ATK +80 MATK +80 クリティカル率 +50 クリティカルダメージ +10%
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then オートスキル発動 +3% アイテム回復 +15% 割合軽減 +20%
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then オートスキル発動 +3% アイテム回復 +15% 割合軽減 +20%
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then オートスキル発動 +5% アイテム回復 +20% 割合軽減 +20%
+When equip [グラティアメイル][グラティアメイル(強化版)][グラティアメイル(再強化版)][グラティアメイル(再々強化版)] then オートスキル発動 +8% アイテム回復 +25% 割合軽減 +23%
+[Halloween] スキルディレイ -0.2s アイテムディレイ -0.2s
+[X = 0.30 * CRT] [ATK up by X] [X = 0.30 * AGI] [MATK up by X]
+[Unknown Condition] MATK +10%
+[Unknown] 絶対命中 +100%
+[Unknown] [X = Lv] [X = X / 25] [DEF up by X] MaxHP +1000 If [Lv > 250] then オートスキル発動
+[Unknown] [X = Lv] [X = X / 25] [DEF up by X] MaxHP +2000 [MaxMP up by Lv] 物理耐性 +15% 魔法耐性 +15% If [Lv > 250] then オートスキル発動
+[MaxHP up by Lv]
+[MaxHP up by Lv]
+[X = Lv] [X = X / 4] [DEF up by X] 無耐性 +5%
+[X = 0.30 * Lv] [DEF up by X]
+[Throwing] ATK +3% MATK +3% スキルディレイ -0.2s MATK +10% MP消費 -10% ヘイト増加 -15% スキルディレイ -1.0s アイテムディレイ -1.0s 水耐性 +10% スペルバースト率 +5%
+If [STR > 400] then ATK +5% STR +15 If [INT > 400] then MATK +5% If [VIT > 400] then MaxHP +12% VIT +15 If [AGI > 400] then オートスキル発動 AGI +15 If [DEX > 400] then スキルディレイ -0.5s DEX +15 If [CRT > 400] then クリティカルダメージ +3% CRT +15
+[X = AGI] [X = X / 4] [DEF up by X] [Paladin] 防御時、確率でパリィ発動 +10%
+[X = AGI] [X = X / 2] [DEF up by X] [Paladin] 防御時、確率でパリィ発動 +15%
+[X = 0.15 * CRT] [ATK up by X]
+[X = 0.20 * CRT] [ATK up by X]
+[X = 0.50 * CRT] [ATK up by X]
+[White Day] MP消費 -20%
+[Unknown Condition] MATK +10%
+[Swords] ATK +5% DEF +2% オートスキル発動 +2% ATK +17% 物理耐性 +8% クリティカルダメージ +2% +800 スキルディレイ +0.7s アイテムディレイ +0.7s
+[X = Lv] [X = X / 2] [ up by X] 物理耐性 +4% 魔法耐性 +2% 光耐性 -20% [X = X  4] [X = X  -1] [ヒール受け up by X]
+[X = Lv] [ up by X] 物理耐性 +7% 魔法耐性 +4% ダメージ反射 +12% 光耐性 -10% [X = X  -1] [ヒール受け up by X]
+[X = Lv] [X = X  2] [ up by X] 物理耐性 +14% 魔法耐性 +11% ダメージ反射 +15% 光耐性 -15% [X = X  -1] 光属性に物理 +15% [ヒール受け up by X]
+[DEF up by Lv] 火耐性 -20% オートスキル発動
+[Claws] ATK +6%
+[New Years] MaxHP +500 MaxMP +50
+[Samurai] [Ninja] クリティカル率 +10
+[Samurai] [Ninja] クリティカル率 +15
+[Samurai] [Ninja] クリティカル率 +15
+If [Lv < 200] then 物理耐性 -25% 魔法耐性 -25%
+If [Lv < 200] then 物理耐性 -25% 魔法耐性 -25%
+If [Lv < 200] then 物理耐性 -25% 魔法耐性 -25%
+When equip [ラヴァメイル][ラヴァメイル(強化版)][ラヴァメイル(再強化版)][ラヴァメイル(再々強化版)][ラヴァメイル(再々々強化版)] then ATK +4%
+When equip [ラヴァメイル][ラヴァメイル(強化版)][ラヴァメイル(再強化版)][ラヴァメイル(再々強化版)][ラヴァメイル(再々々強化版)] then ATK +7%
+[X = AGI] [X = X / 3] [MATK up by X]
+[Assassin] 回避時反撃率 +15%
+If [INT > 300] then スキルディレイ -1.0s
+[X = 0.04 * Lv] [MDEF up by X] [Paladin] 闇耐性 +5% 火耐性 +5% 風耐性 -5%
+[X = 0.50 * Lv] [MDEF up by X] [X = 2.00 * Lv] [DEF up by X] 物理耐性 +10% 魔法耐性 +10% オートスキル発動 気絶時間 -1.0s
+[X = 0.50 * Lv] [MDEF up by X] [X = 2.00 * Lv] [DEF up by X] 物理耐性 +14% 魔法耐性 +14% 範囲軽減 +5% 割合軽減 +15% オートスキル発動 気絶時間 -1.0s
+[X = 0.55 * Lv] [MDEF up by X] [X = 2.10 * Lv] [DEF up by X] 物理耐性 +15% 魔法耐性 +15% 範囲軽減 +8% 割合軽減 +17% オートスキル発動 気絶時間 -1.5s
+[Paladin] 防御時、確率でパリィ発動 +15% オートスキル発動 魔法耐性 -3%
+[Assassin] 魔法回避 +5% 水属性に物理 +5%
+[Paladin] 防御時、確率でパリィ発動 +7% [Y = 0.20 * AGI] If [Y > 50] then [Y = 50] [Y = Y  -1] [スキルディレイ up by Y] [Y = 0.30 * AGI] [Y = Y  -1] [AGI up by Y]
+[MaxHP up by Lv] [MaxMP up by Lv] MP消費 -10% クリティカル率 -15% [Unknown] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 オートスキル発動
+[MaxHP up by Lv] [MaxMP up by Lv] MP消費 -15% クリティカル率 -15% [Unknown] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 オートスキル発動
+[MaxHP up by Lv] [MaxMP up by Lv] MP消費 -15% クリティカル率 -15% [Canes] If [INT > 256] then 無魔法威力 +4% 火魔法威力 +4% 水魔法威力 +4% 風魔法威力 +4% 地魔法威力 +4% 光魔法威力 +4% 闇魔法威力 +4% [Unknown] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 オートスキル発動
+[Throwing] クリティカルダメージ +6%
+[Throwing] クリティカルダメージ +6% [Ninja] オートスキル発動 +5%
+[Throwing] クリティカルダメージ +10% [Ninja] オートスキル発動 +5%
+When equip [リヒトアーマー][リヒトアーマー(強化版)][リヒトアーマー(再強化版)][リヒトアーマー(再々強化版)] then クリティカル率 +10 クリティカルダメージ +10% [X = Lv] [X = X / 5] [ATK up by X] オートスキル発動
+When equip [リヒトアーマー][リヒトアーマー(強化版)][リヒトアーマー(再強化版)][リヒトアーマー(再々強化版)] then クリティカル率 +12 クリティカルダメージ +12% [X = 0.40 * Lv] [ATK up by X] オートスキル発動
+When equip [リヒトアーマー][リヒトアーマー(強化版)][リヒトアーマー(再強化版)][リヒトアーマー(再々強化版)] then クリティカル率 +12 クリティカルダメージ +12% [X = 0.40 * Lv] [ATK up by X] オートスキル発動
+[X = Lv] [X = X  25] [X = X / 10] [ up by X] [Swords] [Claws] クリティカルダメージ +5% 射程 +1
+[X = 3.00 * Lv] [ up by X] [Swords] [Claws] クリティカルダメージ +8% 射程 +2
+[X = 3.50 * Lv] [ up by X] [Swords] クリティカルダメージ +10% CRT +5 [Claws] 射程 +2 物理貫通 +5%
+[X = Lv] [X = X / 20] [MATK up by X]
+[X = Lv] [X = X / 10] [MATK up by X]
+[MaxHP up by Lv]
+If [INT > 250] then スキルディレイ -1.0s アイテムディレイ -1.0s
+If [INT > 250] then スキルディレイ -1.2s アイテムディレイ -1.2s
+If [INT > 300] then スキルディレイ -1.4s アイテムディレイ -1.4s
+If [Lv > 240] then スキルディレイ -1.0s アイテムディレイ -1.0s
+If [Lv > 260] then スキルディレイ -1.2s アイテムディレイ -1.2s
+If [Lv > 300] then スキルディレイ -1.5s アイテムディレイ -1.5s
+If [Lv > 300] then スキルディレイ -2.0s アイテムディレイ -2.0s 移動速度 +8%
+[X = 0.75 * DEX] [ATK up by X]
+[X = 0.75 * DEX] [ATK up by X]
+[X = 0.50 * AGI] [ATK up by X] [Ninja] オートスキル発動
+If [INT > 256] then スキルディレイ -0.5s MP消費 -20%
+[MaxHP up by Lv] INT +1
+[X = VIT] [X = X / 2] [DEF up by X]
+[X = 0.70 * VIT] [DEF up by X] [X = 0.05 * CRT] [異常耐性 up by X]
+[DEF up by VIT] [X = 0.05 * CRT] [異常耐性 up by X]
+[Childrens Day] HP自然回復 +100% MP自然回復 +100%
+[X = Lv] [X = X / 4] [Y = STR] [Y = Y / 4] [X = X + Y] [ATK up by X] [X = Lv] [X = X / 25] [CRT up by X]
+[Unknown Condition] MATK +10%
+if [Lv < 20] then 反動ダメージ +100%
+if [Lv < 20] then 反動ダメージ +100%
+if [Lv < 20] then 反動ダメージ +100%
+[X = 1.80 * Lv] If [X > 600] then [X = 600] [ up by X]
+[X = 1.80 * Lv] If [X > 800] then [X = 800] [ up by X]
+If [INT > 256] then 無耐性 +7% 光耐性 +7%
+If [INT > 256] then 無耐性 +7% 光耐性 +7%
+[Xmas] ドロップ +5%
+[Halloween] ドロップ +50%
+[Halloween] クリティカルダメージ +5%
+[Bows] ASPD +20% 命中 +15% [Sniper] [X = DEX] [X = X / 16] [CRT up by X] [X = DEX] [X = X / 32] [CRT up by X]
+[X = INT] [X = X / 64] [ATK up by X] オートスキル発動
+[X = Lv] [X = X  5] [MaxHP up by X] 回避 +15% ヘイト増加 -10%
+[X = 0.20 * CRT] [ATK up by X] [X = 0.40 * AGI] [MATK up by X]
+[X = Lv] [X = X / 2] [ up by X] 絶対命中 +10%
+[X = 0.10 * STR] [X = X  -1] [クリティカルダメージ up by X] [Paladin] 防御時、確率でパリィ発動 +7% [Feb]
+[X = 0.10 * STR] [X = X  -1] [クリティカルダメージ up by X] [Paladin] 防御時、確率でパリィ発動 +11% [Feb]
+[X = 0.30 * Lv] [ATK up by X] [X = 1.50 * Lv] [ up by X] オートスキル発動
+[X = 0.30 * Lv] [MATK up by X] [X = 1.50 * Lv] [魔法威力 up by X] オートスキル発動
+If [Lv > 160] then [Feb] [Paladin]
+If [INT > 200] then MATK +10%
+[X = VIT] [X = X / 10] [クリティカル率 up by X]
+[X = VIT] [X = X / 8] [クリティカル率 up by X]
+[MaxHP up by Lv]
+[X = Lv] [X = X  2] [MaxHP up by X]
+[X = 3.00 * Lv] [MaxHP up by X]
+if [X < 0] then [Unknown Condition] 詠唱時間 -10%
+[Xmas] ATK +5% MATK +5% ASPD +10% 詠唱時間 -10%
+[Xmas] 経験値 +20%
+[Xmas] ATK +5% MATK +5% ASPD +10% 詠唱時間 -10%
+if [AGI < 200] then [X = AGI] [X = X - 200] [X = X / 4] [命中 up by X] [X = AGI] [X = X - 200] [X = X / 2] [クリティカル率 up by X]
+[Swords] STR +20 VIT +20
+[White Day] オートスキル発動
+[White Day] オートスキル発動
+[Xmas] [X = 0.25 * Lv] [MDEF up by X]
+if [X < 0] then [Unknown Condition] 物理耐性 +5% 魔法耐性 +5%
+[Throwing] ATK +3% MATK +3% スキルディレイ -0.2s MATK +12% MaxMP +30% INT +9 DEX +18 詠唱時間 -20% 詠唱防御 +10% オートスキル発動
+If [STR > 300] then 絶対回避 +5%
+If [STR > 300] then 絶対回避 +5%
+If [STR > 400] then 絶対回避 +10%
+[X = 0.50 * VIT] [MATK up by X] [Canes] [X = X / 1000] If [X > 10] then [X = 10] [物理貫通 up by X] [魔法貫通 up by X]
+[Y = 0.75 * VIT] [MATK up by Y] [Canes] [Y = Y / 800] If [Y > 15] then [Y = 15] [物理貫通 up by Y] [魔法貫通 up by Y]
+[ up by Lv] [魔法威力 up by Lv]
+[Bows] DEX +20 AGI +20
+[X = Lv] [X = X / 3] [MaxMP up by X]
+[DEF up by Lv] [X = 1.50 * Lv] [X = X  -1] [MDEF up by X]
+[X = 1.02 * Lv] [DEF up by X] [X = 1.50 * Lv] [X = X  -1] [MDEF up by X] 気絶時間 -0.5s 麻痺時間 -0.5s 発火時間 -0.5s
+[X = 1.05 * Lv] [DEF up by X] [X = 1.50 * Lv] [X = X  -1] [MDEF up by X] 気絶時間 -1.0s 麻痺時間 -1.0s 発火時間 -1.0s
+[Bows] ATK +5% 射程 +1 魔法回避 +3% ATK +8% MATK +8% オートスキル発動 +9% クリティカルダメージ +9% MATK +5%
+[Claws] クリティカルダメージ +3% 絶対回避 +3% 魔法耐性 +5% VIT +5 クリティカルダメージ +22% 無耐性 -50% 範囲軽減 -10% オートスキル発動
+[X = Lv] [X = X / 12] [MaxMP up by X]
+[Additional] DEX +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+[Additional] DEX +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+[X = INT] [X = X + DEX] [Y = 0.02 * X] If [Y > 10] then [Y = 10] [闇属性に物理 up by Y] [光魔法威力 up by Y] [闇耐性 up by Y]
+[X = INT] [X = X + DEX] [Y = 0.02 * X] If [Y > 10] then [Y = 10] [闇属性に物理 up by Y] [光魔法威力 up by Y] [闇耐性 up by Y]
+[July] [Aug] ドロップ +10% ドロップ +5%
+[Canes] MATK +5% ヒール回復 +5%
+[White Day] MaxHP +10%
+[Assassin] ATK +5%
+[Assassin] ATK +8%
+[Assassin] ATK +13% 風属性に物理 +9%
+[X = 1.50 * STR] [MaxMP up by X] [X = 4.50 * INT] [MaxHP up by X] 魔法耐性 +4% 麻痺時間 -0.6s
+[X = STR] [X = X  3] [MaxMP up by X] [X = INT] [X = X  6] [MaxHP up by X] 魔法耐性 +9% 麻痺時間 -1.0s ヒール回復 +15%
+[X = STR] [X = X  4] [MaxMP up by X] [X = INT] [X = X  8] [MaxHP up by X] 魔法耐性 +11% 麻痺時間 -1.5s ヒール回復 +15%
+[Unknown Condition] 水耐性 +5%
+[X = 0.40 * CRT] [ATK up by X] [X = 0.20 * AGI] [MATK up by X]
+[X = VIT] [X = X  2] [ヒール受け up by X]
+[X = VIT] [X = X / 2] [X = X  5] [ヒール受け up by X]
+[X = VIT] [X = X / 2] [X = X  5] [ヒール受け up by X]
+[X = VIT] [X = X / 40] [ダメージ反射 up by X]
+[Bows] [X = STR] [X = X  110] [X = X / 100] [ATK up by X]
+[Bows] MaxHP +10% オートスキル発動
+If [Lv > 300] then アイテム回復 +20%
+[Bows] [X = DEX] [X = X  90] [X = X / 100] [ATK up by X] [X = DEX] [X = X / 100] [ASPD up by X]
+[X = 0.08 * CRT] [詠唱時間 up by X]
+[Y = 0.16 * CRT] [詠唱時間 up by Y]
+[Assassin] クリティカルダメージ +17%
+[X = 0.20 * Lv] [異常耐性 up by X]
+[MaxHP up by X] MaxMP -20% MDEF +1%
+[Bows] ASPD +30% 命中 +20% ATK -10% クリティカルダメージ -1%
+[Bows] ATK +10
+[Bishop] ヒール回復 +5% 闇耐性 -5%
+[X = AGI] [X = X / 2] [ up by X]
+[Canes] [X = VIT] [X = X / 4] [MATK up by X]
+If [DEX > 300] then MATK +6%
+[X = Lv] [X = X - VIT] If [X > 400] then [X = 400] if [X < 1] then [X = 1] [MATK up by X]
+[Canes] MATK +5% 光魔法威力 +12% 闇魔法威力 +12%
+[Claws] オートスキル発動
+[ up by Lv] [X = Lv] [X = X / 10] [X = X  Lv] [X = X / 2] [MaxHP up by X]
+[Bows] ATK +5
+[X = STR] [X = X - DEX] if [X < 0] then [X = X  -1] [X = Lv] [ATK up by X] [X = INT] [X = X - CRT] if [X < 0] then [X = X  -1] [X = Lv] [MATK up by X]
+When equip [ゲイ＝ボルグ] then クリティカルダメージ +10% 物理貫通 +25%
+If [Lv > 240] then MaxHP +40%
+[Throwing] ASPD +10% クリティカル率 +10
+[X = Lv] [X = X - VIT] If [X > 300] then [X = 300] if [X < 1] then [X = 1] [ATK up by X]
+[X = 0.04 * DEX] [物理貫通 up by X]
+[Bows] [X = INT] [X = X / 10] [クリティカル率 up by X]
+[X = Lv] [X = X  2] [ up by X]
+[Bows] 光属性に物理 +15%
+[Bows] 風属性に物理 +10% 地属性に物理 -10%
+[Bows] [X = 0.75 * DEX] [Y = 0.50 * STR] [X = X + Y] [ATK up by X] 射程 +1 全ダメージ軽減 -20%
+[X = Lv] [X = X + Lv] [X = X - VIT] [X = X - INT] if [X < 0] then [Y = 0.80 * X] [Y = Lv] [ATK up by Y]
+[Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 [Unknown Condition] オートスキル発動 オートスキル発動
+[Bows] 地属性に物理 +10% 火属性に物理 -10%
+[Bows] 闇属性に物理 +15%
+[Swords] [Claws] クリティカルダメージ +9% 絶対回避 -12% 魔法回避 -12%
+[ヒール受け up by Lv] HP自然回復 +10% MP自然回復 +10%
+If [INT > 200] then オートスキル発動
+If [Lv < 29] then 経験値 +20%
+If [Lv > 200] then [X = INT] [X = X / 16] [MATK up by X] [X = X / 4] [オートスキル発動 up by X]
+[Y = 0.10 * AGI] [AGI up by Y] 魔法耐性 -10%
+[Swords] [命中 up by DEX]
+[Claws] ATK +5%
+[Bows] ATK +30
+[X = VIT] [X = X  60] [X = X / 100] [ATK up by X]
+[Monk] シェルブレイク率 +5% [Claws] AGI +15 オートスキル発動 +2%
+if [STR < 300] then [X = STR] [X = X  -1] [AGI up by X]
+[Throwing] 闇魔法威力 +10% 水耐性 +5%
+[Bows] [X = Lv] [X = X  4] [HP自然回復 up by X] [X = X / 20] [MP自然回復 up by X] [ATK up by CRT] [MATK up by DEX]
+[Claws] [X = Lv] [X = X / 200] [射程 up by X] [ATK up by CRT] [MATK up by DEX]
+[Canes] [X = Lv] [X = X / 50] [スペルバースト率 up by X] [ATK up by CRT] [MATK up by DEX]
+[Swords] [X = Lv] [X = X / 10] [VIT up by X] [ATK up by CRT] [MATK up by DEX]
+[Throwing] [X = Lv] [X = X / 50] [クリティカルダメージ up by X] [ATK up by CRT] [MATK up by DEX]
+If [INT < 200] then MaxMP +10%
+If [Warrior] then [X = Lv] [X = X / 2] [ATK up by X]
+[Bows] 地属性に物理 +20% 火属性に物理 -20%
+[ up by DEX] [X = Lv] [X = X / 125] [ASPD up by X] オートスキル発動
+[Bows] ATK +15
+If [Lv > 50] then MaxHP +120 MaxMP +120 MaxHP +8% MaxMP +8% MaxHP +60 MaxMP +60 MaxHP +4% MaxMP +4%
+If [STR > 300] then ATK +5% If [VIT > 300] then MaxHP +20%
+[Swords] 無属性に物理 +15% AGI -15 物理貫通 -20%
+[Halloween] オートスキル発動 +10%
+[X = CRT] If [X > 256] then [X = 256] [ATK up by X]
+[Swords] [X = VIT] [X = X / 4] [ATK up by X]
+If [VIT > 150] then [X = VIT] [X = X  2] [ヒール受け up by X] ヒール受け +1%
+[Bows] クリティカルダメージ +8% オートスキル発動
+If [DEX > 256] then 物理耐性 +5% 魔法耐性 +5% ヒール受け +5%
+[X = INT] [Y = 0.01 * X] [光魔法威力 up by Y] MP消費 -10% オートスキル発動
+If [INT > 150] then 詠唱時間 -15%
+If [Lv > 256] then MATK +4%
+[Canes] [X = AGI] [X = X / 10] [X = X + AGI] [MATK up by X]
+If [Lv > 200] then MaxHP +50%
+[Swords] ASPD = 1 クリティカル率 +10 クリティカルダメージ +10% オートスキル発動
+[Swords] ATK +8% 割合軽減 +6%
+[X = INT] [X = X  -4] [ヒール受け up by X]
+[Minstrel] STR +3 AGI +3 VIT +3 INT +3 DEX +3 CRT +3
+[X = 449] [X = X - AGI] [X = X / 64] [Jan] [X = 1] [ATK up by X]
+When equip [澪のカタナ] then STR +3 AGI +3 VIT +3 INT +3 DEX +3 CRT +3 オートスキル発動 +10% ATK +100 +500
+[Unknown Condition] ASPD = 1 [X = ASPD] if [X < 10] then [X = 10] [Jan] [X = X  10] [ATK up by X] [X = X / 50] If [X > 2] then [X = 2] [ATK up by X]
+[Alchemist] MATK +8% スキルディレイ -1.0s
+[Swords] [X = Lv] [X = X / 2] [VIT up by X]
+[Bows] 火属性に物理 +20% 水属性に物理 +20% 風属性に物理 +20% 地属性に物理 +20% 光属性に物理 +15% 闇属性に物理 +15%
+[Bows] ATK +25
+[Bows] 火属性に物理 +20% 水属性に物理 +20% 風属性に物理 +20% 地属性に物理 +20%
+[X = 0.02 * AGI] [絶対命中 up by X] [絶対回避 up by X] 回避時反撃率 +9%
+[Minstrel] ATK +6% クリティカルダメージ +3% [ up by Lv] +100 ASPD +10% オートスキル発動
+[Swords] If [AGI > 200] then [X = AGI] [X = X / 32] [回避 up by X]
+When equip [NOVC-M:03] then MATK +3% スペルバースト率 +5%
+[Bows] ATK +35
+[Claws] [X = 0.03 * INT] [クリティカルダメージ up by X] オートスキル発動 +1%
+[ up by Lv] クリティカルダメージ +4% オートスキル発動
+If [Lv < 140] then 経験値 +5%
+[X = STR] [X = X / 4] [ATK up by X] 魔法耐性 -30% オートスキル発動
+If [INT > 100] then 回避 +2% 魔法回避 +2% 絶対回避 +2% If [INT > 200] then 回避 +4% 魔法回避 +4% 絶対回避 +4%
+[Bows] ATK +40
+[X = 0.04 * DEX] [魔法貫通 up by X]
+If [Lv > 200] then MaxMP +50%
+[Alchemist] 生産ロスト率 -3%
+[ up by VIT]
+[Throwing] [X = 0.02 * VIT * 100] [X = Lv] [MATK up by X]
+[ up by Lv] [X = 0.50 * Lv] if [X < 1] then [X = 1] [ up by X] [X = 0.07 * Lv] if [X < 1] then [X = 1] If [X > 10] then [X = 10] [ up by X] [ up by X] [ up by X] [ up by X] [ up by X] [ up by X]
+[Bows] 風属性に物理 +20% 地属性に物理 -20%
+If [Mage] then [Jan] 闇魔法威力 +5%
+[X = Lv] If [X > 300] then [X = 300] [ATK up by X] [X = 0.01 * Lv] [ATK up by X] DEX -100 命中 -70% 絶対命中 -70% クリティカル率 -30%
+If [Mage] then If [X > 0] then MaxMP +1000 INT +1 MaxHP +2000 VIT +1
+[Bows] ATK +30 MATK +30
+If [VIT > 200] then 魔法耐性 +10% If [INT > 200] then 物理耐性 +10%
+[Swords] [X = 0.75 * AGI] [ATK up by X]
+[Alchemist] 生産大成功率 +4%
+[X = 1.50 * STR] [ up by X]
+[X = VIT] [X = X - 1] [X = X  4] [X = X - 20] [X = X  -1] [X = X + 1000] [MaxHP up by X]
+[Bows] ATK +20
+[ up by Lv] 割合軽減 -5%
+If [Lv > 300] then MATK +8% [High Wizard] [Bishop] [Necromancer] [Alchemist] 無魔法威力 +10% 火魔法威力 +10% 水魔法威力 +10% 風魔法威力 +10% 地魔法威力 +10% 光魔法威力 +10% 闇魔法威力 +10%
+[Bows] [Throwing] クリティカルダメージ +1%
+[X = Lv] [X = X / 5] [X = X + 1] [ATK up by X]
+[ヒール受け up by Lv]
+[X = 0.03 * DEX] [物理貫通 up by X] [魔法貫通 up by X] ATK +6% MATK +4% +200 If [Lv > 300] then 物理貫通 +5% 魔法貫通 +5%
+[Bows] 火属性に物理 +20% 水属性に物理 -20%
+[Y = 0] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Unknown Condition] [Y = Y + 1] [Y = Y  10] [ATK up by Y]
+When equip [ヒーロースーツ・赤][ヒーロースーツ・黒][ヒーロースーツ・黄][ヒーロースーツ・白][ヒーロースーツ・青][ヒーロースーツ・緑] then MaxHP +5% MaxMP +5% クリティカルダメージ +5% スペルバースト率 +5% When equip [ヒーローメット・赤][ヒーローメット・黒][ヒーローメット・黄][ヒーローメット・白][ヒーローメット・青][ヒーローメット・緑] then 回避 +5% 命中 +5% 移動速度 +5% When equip [ヒーローメット・赤][ヒーローメット・黒][ヒーローメット・黄][ヒーローメット・白][ヒーローメット・青][ヒーローメット・緑] then 回避 +5% 命中 +5% 移動速
+[Swords] クリティカル率 +6
+[Minstrel] MP消費 -15%
+[Bows] 水属性に物理 +20% 風属性に物理 -20%
+[Bows] [ATK up by DEX]
+[July] [Aug] クリティカルダメージ +10%
+[Swords] 光魔法威力 +8% オートスキル発動
+If [VIT > 200] then ATK +5%
+[Canes] 射程 +3
+If [Lv > 180] then MaxHP +1500
+[Canes] MATK +10% [Throwing] 魔法貫通 +10%
+[Bows] 火属性に物理 +10% 水属性に物理 -10%
+[Ninja] オートスキル発動
+[Bows] 水属性に物理 +10% 風属性に物理 -10%
+[ up by Lv] [魔法威力 up by Lv] ATK +1% MATK +1% [Swords] 無属性に物理 +10% STR +5 [Bows] 射程 +1 DEX +5 [Canes] 詠唱時間 -5% スキルディレイ -0.5s INT +4 [Claws] 物理耐性 +5% 魔法耐性 +5% CRT +5 クリティカル率 +10 INT +5
+If [INT > 300] then MaxMP +10% MATK +5%
+[Canes] [X = 0.80 * AGI] [Y = 0.60 * CRT] [X = X + Y] [MATK up by X] MaxHP -2000
+[Additional] ヘイト増加 -25%
+[Weapons] [Swords] ATK +10% DEF +2% ASPD +10%
+If [Lv < 200] then [Unknown] 経験値 +25% 経験値 +25%
+[Special] MATK +8% INT +5
+[Additional] ATK +5%
+[Special] 移動速度 +3%
+[Armor] クリティカルダメージ +15%
+[Armor] DEF +30%
+[Special] スキルディレイ -1.5s
+[Additional] ヘイト増加 -35%
+If [Warrior] then ATK +12% If [Mage] then MATK +17% [July] [Aug] スキルディレイ -1.0s アイテムディレイ -1.0s
+[Weapons] クリティカルダメージ +8% [Armor] VIT +5
+[Weapons] MaxHP +5% MaxMP +5%
+[Additional] ATK +8% MATK +8%
+[Weapons] ASPD +10% If [VIT > 200] then ASPD +20%
+[Special] クリティカルダメージ +7% If [STR > 200] then クリティカルダメージ +7%
+[Weapons] MATK +4% 絶対命中 +25%
+[Armor] クリティカルダメージ +7%
+[Weapons] 移動速度 +3%
+[July] [Aug] クリティカルダメージ +10% 地属性に物理 +7%
+[Weapons] 火属性に物理 +12% ATK +2% 物理耐性 -5%
+[Armor] オートスキル発動 +3% [Additional] クリティカルダメージ +6%
+[Weapons] 気絶時間 -1.5s
+[X = VIT] [X = X / 10] [X = X  X] [X = X / 2] [X = X + 100] [ヒール受け up by X]
+[X = AGI] [X = X / 4] [X = X + 1] [MATK up by X]
+[Additional] 火属性に物理 +10%
+[Armor] [Weapons] [X = STR] [X = X + VIT] ATK +16% MaxHP +6% 物理耐性 -5%
+[Weapons] 生産ロスト率 -3% [Armor] 生産経験値獲得率 +5%
+[Weapons] 麻痺持続 +2.0s MATK +13%
+[Additional] 水属性に物理 +10%
+[Additional] 移動速度 +3%
+[Weapons] 生産経験値獲得率 +5% [Armor] 生産ロスト率 -3%
+[Special] オートスキル発動
+[Weapons] When equip [ゲイ＝ボルグ] then 物理貫通 +50% クリティカルダメージ +5%
+[X = 10.00 * Lv] If [X > 300] then [X = 300] [MaxHP up by X] [X = 5.00 * Lv] If [X > 150] then [X = 150] [MaxMP up by X] [X = Lv] [X = X / 80] [X = X + 1] If [X > 4] then [X = 4] [MaxHP up by X] [MaxMP up by X] アイテム回復 +5%
+[Xmas] ヒール回復 +2% [Unknown] MaxHP +20% MaxMP +20%
+[Armor] ヘイト増加 +50%
+[Additional] 割合軽減 +5%
+[Armor] ATK +6% +300
+[Special] MaxHP +20% 範囲軽減 +5%
+[X = 0.90 * VIT] [X = X + 1] [MATK up by X] スに魔法 +1%
+[X = 12] [X = X - ASPD] [X = X  10] [Feb] [ up by X]
+[Additional] MATK +5% 魔法貫通 +5% [魔法威力 up by Lv]
+[Weapons] スキルディレイ -0.5s [Unknown Condition] スキルディレイ -1.0s MP消費 -20%
+[Assassin] 物理耐性 +7%
+[July] [Aug] MATK +10% INT +5 水魔法威力 +6%
+[Armor] 射程 +1
+[X = 0.30 * Lv] [ATK up by X] [MATK up by X] [X = 10.00 * Lv] [MaxHP up by X] [MaxMP up by Lv] [Special] HP回復 +50% MP回復 +50% [Unknown Condition] ATK +20% MATK +20% オートスキル発動 +5% 経験値 +5%
+[July] [Aug] MaxHP +10% 地魔法威力 +8%
+[Special] クリティカルダメージ +3% [July] [Aug] ATK +5%
+[Weapons] MATK +14% スキルディレイ -0.3s アイテムディレイ -0.3s
+[Armor] 絶対回避 +5% 魔法回避 +5%
+[Armor] 地属性に物理 +10%
+[Armor] MATK +25 MATK +18%
+[Weapons] オートスキル発動 +7% If [DEX > 250] then 魔法威力 +1%
+[Weapons] 出血ダメージ +5% +50.0s
+[Special] MaxHP -30%
+[Special] 更に発火ダメージ +4% 火魔法威力 +4%
+[Armor] MaxHP +14% [Additional] 割合軽減 +8%
+[Weapons] MaxHP +10%
+[Weapons] MATK +5%
+[Special] スキルディレイ -0.3s スに物理 +1%
+[Additional] ヒール回復 +7%
+[Weapons] クリティカルダメージ +14%
+[Armor] If [STR > 250] then クリティカルダメージ +5% If [AGI > 250] then クリティカルダメージ +10%
+[Armor] If [STR > 300] then クリティカルダメージ +7% If [AGI > 300] then クリティカルダメージ +11%
+[Special] [MATK up by AGI]
+[Weapons] 物理貫通 +10%
+If [STR > 250] then ATK +10% If [INT > 250] then MATK +10%
+If [CRT > 200] then MATK +30%
+[X = DEX] [X = X / 4] [X = X + 1] [MATK up by X]
+[Armor] [ up by Lv] [魔法威力 up by Lv] ATK +10% MATK +10% 物理耐性 +10% 魔法耐性 +10%
+[Armor] 物理耐性 +7% 魔法耐性 +7% ATK +8% [Unknown Condition] 割合軽減 +20%
+[Weapons] MATK -3% MP消費 -25%
+[Special] オートスキル発動 +3%
+[Weapons] スキルディレイ -0.5s
+[Weapons] クリティカルダメージ +3% 無魔法威力 +6%
+[Armor] アイテム回復 +30%
+[Additional] MaxHP -10% MaxMP -10% MATK +4% オートスキル発動 +1%
+[Armor] ATK +9% 魔法耐性 +10%
+[Additional] MaxHP +5% MaxMP +5%
+[Armor] MATK +10%
+[Additional] スキルディレイ -0.5s
+[Special] MaxMP -40%
+[Armor] クリティカルダメージ +5%
+[X = VIT] [X = X / 4] [X = X + 1] [ATK up by X]
+[Armor] MATK +7% If [DEX > 200] then MATK +7%
+[Additional] スペルバースト率 +10%
+[Additional] If [INT > 250] then MaxMP +12% If [AGI > 250] then MaxMP +10%
+[Armor] VIT +8
+[Additional] 光属性に物理 +10%
+[Weapons] ATK +3%
+[Additional] 闇属性に物理 +10%
+[ATK up by Lv] 気絶時間 +3.0s
+[Weapons] When equip [NOVC-M:03] then 風魔法威力 +4%
+[Canes] 射程 +1 ASPD +10%
+[Weapons] 詠唱時間 -5% ASPD -10%
+[Weapons] 射程 +1
+[Weapons] ATK +3%
+[Additional] オートスキル発動 +2% スペルバースト率 +10%
+[Armor] スペルバースト率 +10%
+[Special] MATK +6% MaxMP +30%
+[Weapons] +300 アイテムディレイ -0.5s スキルディレイ -0.5s ATK +5%
+[Additional] 風属性に物理 +10%
+[Weapons] MaxHP +5% VIT +8 [Unknown Condition] MaxHP +15% 範囲軽減 +20%
+[Weapons] オートスキル発動
+[Additional] ATK +6%
+[Weapons] スキルディレイ -0.4s
+[Additional] 絶対回避 +7% 魔法回避 +7% アイテムディレイ -1.0s
+[Weapons] スペルバースト率 +10%
+[Swords] STR +3
+[Additional] ヘイト増加 +35%
+[Additional] MATK +9% スペルバースト率 +5% [Unknown Condition] 魔法耐性 +10%
+[Additional] オートスキル発動 +5% 射程 +1
+[Additional] 地属性に物理 +10%
+[Armor] MaxHP +12% 水耐性 +2% [Additional] クリティカルダメージ +8%
+[Weapons] ATK +15% MATK +20% 物理貫通 +5% 魔法貫通 +5%
+[Armor] ATK +5% ヘイト増加 +10% 経験値 +5% 水耐性 +2% 水属性に物理 +5%
+[Armor] MATK +5%
+[Armor] MaxHP +1000
+[Weapons] 物理貫通 +20%
+[Special] 水属性に物理 +12% [Unknown Condition] 経験値 +5%
+[Special] ATK +10% MaxHP +8%
+[Additional] 物理貫通 +10%
+[Armor] 移動速度 +3%
+[X = 0.60 * VIT] [X = X + 1] [ATK up by X]
+[Additional] MATK +5% 魔法威力 +400
+[Special] オートスキル発動 +10% スキルディレイ -0.5s
+[Additional] ATK +8% クリティカルダメージ +2% [Unknown Condition] 物理耐性 +10%
+[Additional] 無属性に物理 +10%
+If [INT > 100] then MATK +7% If [INT < 200] then MATK +7%
+[Armor] 火魔法威力 +5% 水魔法威力 +5% 風魔法威力 +5% 地魔法威力 +5%
+If [Lv < 140] then MaxHP +10% MaxMP +30% クリティカル率 +20% 回避 +10 命中 +30 +100 絶対回避 +1% 絶対命中 +1%
+[Additional] スキルディレイ -0.3s MATK +12%
+[Weapons] 毒発生 +5%
+[Additional] ATK +8% ヘイト増加 -15%
+[Armor] MATK +5%
+[Special] オートスキル発動
+[Weapons] ATK +8% MATK +8%
+[Additional] スキルディレイ -0.2s アイテムディレイ -0.2s [Unknown Condition] 経験値 +5%
+[X = INT] [Y = 0.01 * X] [光魔法威力 up by Y] [闇魔法威力 up by Y] [光耐性 up by Y] [闇耐性 up by Y]
+[Y = 0.01 * INT] [光魔法威力 up by Y] [闇魔法威力 up by Y] [光耐性 up by Y] [闇耐性 up by Y]
+[ up by Lv]
+[Weapons] ATK +5% ヘイト増加 -5%
+[Swords] 射程 +1
+When equip [クーホリンメダル] then スに物理 +3%
+[X = 0.25 * Lv] [ATK up by X] [MATK up by X] 絶対回避 -10% 魔法回避 -10%
+[X = 12] [X = X - ASPD] [X = X  50] [Feb] [ up by X]
+If [STR > 350] then ATK +2% +300 STR +3 If [INT > 350] then MATK +2% MaxMP +5% INT +3 If [VIT > 350] then MaxHP +5% ヒール受け +5% VIT +3 If [AGI > 350] then 回避 +5% 回避時反撃率 +5% AGI +3 If [DEX > 350] then アイテムディレイ -0.2s スキルディレイ -0.2s 物理貫通 +2% 魔法貫通 +2% DEX +3 If [CRT > 350] then クリティカルダメージ +3% 絶対回避 +2% 魔法回避 +2% CRT +3
+When equip [ニムエメダル] then スに魔法 +3%
+[X = STR] [X = X + INT] [X = X / 2] [X = X + Lv] [X = X + 100] [ up by X]
+[Unknown Condition] [Unknown Condition] [Unknown Condition] [Unknown Condition] [Unknown Condition] [Unknown Condition] 光魔法威力 +10% 闇属性に物理 +10% 無魔法威力 +10% 無属性に物理 +10% 火魔法威力 +10% 地属性に物理 +10% 水魔法威力 +10% 火属性に物理 +10% 風魔法威力 +10% 水属性に物理 +10% 地魔法威力 +10% 風属性に物理 +10% 闇魔法威力 +10% 光属性に物理 +10%
+[X = STR] [X = X + VIT] [X = X + CRT] ATK +3% MaxHP +3% クリティカルダメージ +3% オートスキル発動 +3% 物理耐性 +3% 魔法耐性 +3% [X = INT] [X = X + AGI] [X = X + DEX] MATK +3% MaxMP +3% スペルバースト率 +3% ヒール回復 +30% 絶対回避 +3% 魔法回避 +3%
