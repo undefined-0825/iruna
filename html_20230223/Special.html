@@ -436,11 +436,11 @@
     <script type="text/javascript">
      function LanguageChange(language){
 			if (language == "jp") {
-				window.location.href = 'http://jp.iruna-online.info';
+				window.location.href = 'https://jp.iruna-online.info';
 			} else if (language == "th") {
-				window.location.href = 'http://th.iruna-online.info';
+				window.location.href = 'https://th.iruna-online.info';
 			} else {
-				window.location.href = 'http://www.iruna-online.info';
+				window.location.href = 'https://www.iruna-online.info';
 			}
 		}
     </script>
@@ -1843,7 +1843,7 @@
        </div>
        <br/>
       </div>
-      <div class="特殊装備 default_attr">
+      <div class="特殊装備 default_attr dex accuracy atk">
        <b>
         <a href="/item/アリックの弓柄" id="アリックの弓柄">
          アリックの弓柄   【特殊装備】
@@ -1852,6 +1852,9 @@
        <br/>
        <div class="ds">
         弓装備時、DEX+30　命中+100　ATK+10%
+       </div>
+       <div class="t_ds">
+        [Bows] DEX +30 命中 +100 ATK +10%
        </div>
        <br/>
       </div>
@@ -3049,6 +3052,36 @@
        </div>
        <br/>
       </div>
+      <div class="特殊装備 default_attr meleetodark meleetolight alldamager">
+       <b>
+        <a href="/item/闇将の加護" id="闇将の加護">
+         闇将の加護   【特殊装備】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        光・闇属性に対して物理+15% 全ﾀﾞﾒｰｼﾞ軽減-15%
+       </div>
+       <div class="t_ds">
+        闇属性に物理 +15% 光属性に物理 +15% 全ダメージ軽減 -15%
+       </div>
+       <br/>
+      </div>
+      <div class="特殊装備 default_attr maxhp darkr lightr x atk">
+       <b>
+        <a href="/item/闇将の籠手" id="闇将の籠手">
+         闇将の籠手   【特殊装備】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        MaxHP+20%　闇耐性+5%　光耐性-10% 剣装備時、ATKがVITで増加
+       </div>
+       <div class="t_ds">
+        MaxHP +20% 闇耐性 +5% 光耐性 -10% [Swords] [X = VIT] [ATK up by X]
+       </div>
+       <br/>
+      </div>
       <div class="特殊装備 default_attr meleetolight meleetodark darkmagic darkr">
        <b>
         <a href="/item/闇神の指輪" id="闇神の指輪">
@@ -3094,7 +3127,7 @@
        </div>
        <br/>
       </div>
-      <div class="特殊装備 default_attr">
+      <div class="特殊装備 default_attr atk matk accuracy x x vit darkr alldamager">
        <b>
         <a href="/item/ダークサイト" id="ダークサイト">
          ダークサイト   【特殊装備】
@@ -3103,6 +3136,9 @@
        <br/>
        <div class="ds">
         ATK+5%　MATK-20%　命中+50 剣装備時、VITがDEXの50%ほど増加 闇耐性+5%　全ﾀﾞﾒｰｼﾞ軽減-20%
+       </div>
+       <div class="t_ds">
+        ATK +5% MATK -20% 命中 +50 [Swords] [X = DEX] [X = X / 2] [VIT up by X] 闇耐性 +5% 全ダメージ軽減 -20%
        </div>
        <br/>
       </div>
@@ -5277,6 +5313,21 @@
        </div>
        <div class="t_ds">
         MaxHP +5% 異常耐性 -20% [Bows] クリティカルダメージ +8% オートスキル発動
+       </div>
+       <br/>
+      </div>
+      <div class="特殊装備 default_attr casttime skilldelay int maxmp">
+       <b>
+        <a href="/item/愛叫マイク" id="愛叫マイク">
+         愛叫マイク   【特殊装備】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        詠唱時間-30%　ｽｷﾙﾃﾞｨﾚｲ-0.8秒 INT+8　MaxMP-10%
+       </div>
+       <div class="t_ds">
+        詠唱時間 -30% スキルディレイ -0.8s INT +8 MaxMP -10%
        </div>
        <br/>
       </div>
@@ -8589,7 +8640,7 @@
        </div>
        <br/>
       </div>
-      <div class="特殊装備 default_attr">
+      <div class="特殊装備 default_attr maxhp ratecut vit">
        <b>
         <a href="/item/物述べの幽玉" id="物述べの幽玉">
          物述べの幽玉   【特殊装備】
@@ -8598,6 +8649,9 @@
        <br/>
        <div class="ds">
         MaxHP+15%　割合軽減+4%　VIT+3 確率で力尽きても復活
+       </div>
+       <div class="t_ds">
+        MaxHP +15% 割合軽減 +4% VIT +3 オートスキル発動
        </div>
        <br/>
       </div>
@@ -9433,17 +9487,17 @@
      </div>
      <ul class="decoration_none">
       <li>
-       <a href="http://www.iruna-online.info">
+       <a href="https://www.iruna-online.info">
        </a>
        Iruna-Online
       </li>
       <li>
-       <a href="http://www.toram-online.info">
+       <a href="https://www.toram-online.info">
        </a>
        Toram-Online
       </li>
       <li>
-       <a href="http://www.ragnarok-online.info">
+       <a href="https://www.ragnarok-online.info">
        </a>
        Ragnarok-Online Mobile
       </li>

@@ -436,11 +436,11 @@
     <script type="text/javascript">
      function LanguageChange(language){
 			if (language == "jp") {
-				window.location.href = 'http://jp.iruna-online.info';
+				window.location.href = 'https://jp.iruna-online.info';
 			} else if (language == "th") {
-				window.location.href = 'http://th.iruna-online.info';
+				window.location.href = 'https://th.iruna-online.info';
 			} else {
-				window.location.href = 'http://www.iruna-online.info';
+				window.location.href = 'https://www.iruna-online.info';
 			}
 		}
     </script>
@@ -1573,22 +1573,7 @@
        <br/>
        <br/>
       </div>
-      <div class="クリスタ default_attr atk matk mpcost haterise">
-       <b>
-        <a href="/item/◇アリックⅡ" id="◇アリックⅡ">
-         ◇アリックⅡ   【クリスタ】
-        </a>
-       </b>
-       <br/>
-       <div class="ds">
-        ATK+13%　MATK+3%　MP消費-6% 追加に装備時、ﾍｲﾄ増加-25%
-       </div>
-       <div class="t_ds">
-        ATK +13% MATK +3% MP消費 -6% [Additional] ヘイト増加 -25%
-       </div>
-       <br/>
-      </div>
-      <div class="クリスタ default_attr">
+      <div class="クリスタ default_attr earthmagic magicr int">
        <b>
         <a href="/item/◇フツヌシ" id="◇フツヌシ">
          ◇フツヌシ   【クリスタ】
@@ -1598,17 +1583,8 @@
        <div class="ds">
         地魔法威力+10%　魔法耐性+5%　INT+3 装備品に地属性の魔法攻撃を付加する。 ※装備箇所のｵｰﾄｽｷﾙは消滅します
        </div>
-       <br/>
-      </div>
-      <div class="クリスタ default_attr">
-       <b>
-        <a href="/item/g・マッスル" id="g・マッスル">
-         G・マッスル   【クリスタ】
-        </a>
-       </b>
-       <br/>
-       <div class="ds">
-        ドロップ率+1% ﾚｱﾄﾞﾛｯﾌﾟ率がほんのちょっと上昇する
+       <div class="t_ds">
+        地魔法威力 +10% 魔法耐性 +5% INT +3 オートスキル発動
        </div>
        <br/>
       </div>
@@ -1627,7 +1603,7 @@
        </div>
        <br/>
       </div>
-      <div class="クリスタ default_attr">
+      <div class="クリスタ default_attr exp exp">
        <b>
         <a href="/item/◇ピーノ" id="◇ピーノ">
          ◇ピーノ   【クリスタ】
@@ -1636,6 +1612,9 @@
        <br/>
        <div class="ds">
         移動速度+3%　Lv300以下なら経験値+15% Lv200以下なら更に経験値+15%
+       </div>
+       <div class="t_ds">
+        移動速度 +3% If [Lv &lt; 300] then 経験値 +15% If [Lv &lt; 200] then 経験値 +15%
        </div>
        <br/>
       </div>
@@ -2044,7 +2023,7 @@
        </div>
        <br/>
       </div>
-      <div class="クリスタ default_attr">
+      <div class="クリスタ default_attr matk maxmp matk casttime spellburst maxmp">
        <b>
         <a href="/item/◇アンジュ" id="◇アンジュ">
          ◇アンジュ   【クリスタ】
@@ -2053,6 +2032,9 @@
        <br/>
        <div class="ds">
         MATK+6%　MaxMP+5% 体に装備時、更にMATK+6%　詠唱時間-20% ｽﾍﾟﾙﾊﾞｰｽﾄ率+5%　MaxMP-20%
+       </div>
+       <div class="t_ds">
+        MATK +6% MaxMP +5% [Armor] MATK +6% 詠唱時間 -20% スペルバースト率 +5% MaxMP -20%
        </div>
        <br/>
       </div>
@@ -2100,6 +2082,21 @@
        </div>
        <div class="t_ds">
         ATK +3% MATK +3% MP消費 -8% [Additional] ヘイト増加 -35%
+       </div>
+       <br/>
+      </div>
+      <div class="クリスタ default_attr atk matk mpcost haterise">
+       <b>
+        <a href="/item/◇アリックⅡ" id="◇アリックⅡ">
+         ◇アリックⅡ   【クリスタ】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        ATK+13%　MATK+3%　MP消費-6% 追加に装備時、ﾍｲﾄ増加-25%
+       </div>
+       <div class="t_ds">
+        ATK +13% MATK +3% MP消費 -6% [Additional] ヘイト増加 -25%
        </div>
        <br/>
       </div>
@@ -2874,6 +2871,18 @@
        </div>
        <br/>
       </div>
+      <div class="クリスタ default_attr firemagic matk mpcost">
+       <b>
+        <a href="/item/◇チッケン" id="◇チッケン">
+         ◇チッケン   【クリスタ】
+        </a>
+       </b>
+       <br/>
+       <div class="t_ds">
+        火魔法威力 +10% MATK +60 MP消費 +15% オートスキル発動
+       </div>
+       <br/>
+      </div>
       <div class="クリスタ default_attr casttime">
        <b>
         <a href="/item/◇シヴィル" id="◇シヴィル">
@@ -2931,21 +2940,6 @@
        </div>
        <div class="t_ds">
         [Weapons] 生産経験値獲得率 +5% [Armor] 生産ロスト率 -3%
-       </div>
-       <br/>
-      </div>
-      <div class="クリスタ default_attr healrecovery lightmagic">
-       <b>
-        <a href="/item/◇シーピーグランマ" id="◇シーピーグランマ">
-         ◇シーピーグランマ   【クリスタ】
-        </a>
-       </b>
-       <br/>
-       <div class="ds">
-        ﾋｰﾙ回復+13%　光魔法威力+2%
-       </div>
-       <div class="t_ds">
-        ヒール回復 +13% 光魔法威力 +2%
        </div>
        <br/>
       </div>
@@ -4241,6 +4235,21 @@
        </div>
        <br/>
       </div>
+      <div class="クリスタ default_attr drop drop">
+       <b>
+        <a href="/item/◇Ｇ・マッスル" id="◇Ｇ・マッスル">
+         ◇Ｇ・マッスル   【クリスタ】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        ドロップ率+1% ﾚｱﾄﾞﾛｯﾌﾟ率がほんのちょっと上昇する
+       </div>
+       <div class="t_ds">
+        ドロップ +1% ドロップ +2%
+       </div>
+       <br/>
+      </div>
       <div class="クリスタ default_attr atk matk drop">
        <b>
         <a href="/item/◇Ｇ・サウロ" id="◇Ｇ・サウロ">
@@ -4490,6 +4499,21 @@
        </div>
        <div class="t_ds">
         MATK +3% ヒール回復 +3% [Additional] ヒール回復 +7%
+       </div>
+       <br/>
+      </div>
+      <div class="クリスタ default_attr x matk windmagic">
+       <b>
+        <a href="/item/◇グラニータ" id="◇グラニータ">
+         ◇グラニータ   【クリスタ】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        MATK up based on AGI Wind magic+2%
+       </div>
+       <div class="t_ds">
+        [X = 0.90 * AGI] [X = X + 1] [MATK up by X] 風魔法威力 +2%
        </div>
        <br/>
       </div>
@@ -7511,6 +7535,18 @@
        </div>
        <br/>
       </div>
+      <div class="クリスタ default_attr matk magicevasion maxmp">
+       <b>
+        <a href="/item/◇獄長アンジュ" id="◇獄長アンジュ">
+         ◇獄長アンジュ   【クリスタ】
+        </a>
+       </b>
+       <br/>
+       <div class="t_ds">
+        MATK +12% 魔法回避 +4% MaxMP -15% [Unknown Condition] +10%
+       </div>
+       <br/>
+      </div>
       <div class="クリスタ default_attr">
        <b>
         <a href="/item/◇プロボーグ" id="◇プロボーグ">
@@ -7946,6 +7982,21 @@
        </div>
        <div class="t_ds">
         水耐性 +3% 物理耐性 +4% [Armor] ATK +5% ヘイト増加 +10% 経験値 +5% 水耐性 +2% 水属性に物理 +5%
+       </div>
+       <br/>
+      </div>
+      <div class="クリスタ default_attr healrecovery lightmagic">
+       <b>
+        <a href="/item/◇シーピーグランマ" id="◇シーピーグランマ">
+         ◇シーピーグランマ   【クリスタ】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        ﾋｰﾙ回復+13%　光魔法威力+2%
+       </div>
+       <div class="t_ds">
+        ヒール回復 +13% 光魔法威力 +2%
        </div>
        <br/>
       </div>
@@ -8997,21 +9048,6 @@
        </div>
        <br/>
       </div>
-      <div class="クリスタ default_attr darkmagic matk lightr">
-       <b>
-        <a href="/item/◇ユル" id="◇ユル">
-         ◇ユル   【クリスタ】
-        </a>
-       </b>
-       <br/>
-       <div class="ds">
-        闇魔法威力+10%　MATK+5%　光耐性-25% 装備品に闇属性の魔法攻撃を付加する。 ※装備箇所のｵｰﾄｽｷﾙは消滅します。
-       </div>
-       <div class="t_ds">
-        闇魔法威力 +10% MATK +5% 光耐性 -25% オートスキル発動
-       </div>
-       <br/>
-      </div>
       <div class="クリスタ default_attr skilldelay spellburst skilldelay matk">
        <b>
         <a href="/item/◇ウシルス" id="◇ウシルス">
@@ -9027,7 +9063,7 @@
        </div>
        <br/>
       </div>
-      <div class="クリスタ default_attr">
+      <div class="クリスタ default_attr maxhp atk">
        <b>
         <a href="/item/◇バレーニア" id="◇バレーニア">
          ◇バレーニア   【クリスタ】
@@ -9036,6 +9072,9 @@
        <br/>
        <div class="ds">
         MaxHP+16%　ATK+7% 剣、杖、爪に装備時、 ダブルアタックSLv+1
+       </div>
+       <div class="t_ds">
+        MaxHP +16% ATK +7% [Weapons] [Swords] [Canes] [Claws]
        </div>
        <br/>
       </div>
@@ -9661,6 +9700,21 @@
        </div>
        <br/>
       </div>
+      <div class="クリスタ default_attr darkmagic matk lightr">
+       <b>
+        <a href="/item/◇ユル" id="◇ユル">
+         ◇ユル   【クリスタ】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        闇魔法威力+10%　MATK+5%　光耐性-25% 装備品に闇属性の魔法攻撃を付加する。 ※装備箇所のｵｰﾄｽｷﾙは消滅します。
+       </div>
+       <div class="t_ds">
+        闇魔法威力 +10% MATK +5% 光耐性 -25% オートスキル発動
+       </div>
+       <br/>
+      </div>
       <div class="クリスタ default_attr vit knockout">
        <b>
         <a href="/item/◇ザント" id="◇ザント">
@@ -9736,17 +9790,17 @@
      </div>
      <ul class="decoration_none">
       <li>
-       <a href="http://www.iruna-online.info">
+       <a href="https://www.iruna-online.info">
        </a>
        Iruna-Online
       </li>
       <li>
-       <a href="http://www.toram-online.info">
+       <a href="https://www.toram-online.info">
        </a>
        Toram-Online
       </li>
       <li>
-       <a href="http://www.ragnarok-online.info">
+       <a href="https://www.ragnarok-online.info">
        </a>
        Ragnarok-Online Mobile
       </li>

@@ -41,7 +41,7 @@ def insert_equip(cur, item, eqtype, jp_name):
     name = text.replace(f'【{jp_name}】', '').replace('📷', '')
     # print(name)
 
-    # DEF, ATK, 備考を抽出
+    # DEF, ATK, 備考を含む行を抽出
     words = ['DEF:', 'ATK:', '備考:']
     hits = included_lines(item.text, words)
     note1 = ''
@@ -77,7 +77,14 @@ def insert_equip(cur, item, eqtype, jp_name):
     else:
         t_ds = ''
 
-    query = f'INSERT INTO equip(type, [name], ds, t_ds, math, note1, note2) VALUES({eqtype}, "{cnv(name)}", "{cnv(ds)}", "{cnv(t_ds)}", "{cnv(math)}", "{cnv(note1)}", "{cnv(note2)}")'
+    query = f"""INSERT INTO equip(type, [name], ds, t_ds, math, note1, note2) 
+VALUES({eqtype}, 
+"{cnv(name)}", 
+"{cnv(ds)}", 
+"{cnv(t_ds)}", 
+"{cnv(math)}", 
+"{cnv(note1)}", 
+"{cnv(note2)}")"""
     # print(query)
     cur.execute(query)
 

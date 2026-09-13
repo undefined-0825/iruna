@@ -436,11 +436,11 @@
     <script type="text/javascript">
      function LanguageChange(language){
 			if (language == "jp") {
-				window.location.href = 'http://jp.iruna-online.info';
+				window.location.href = 'https://jp.iruna-online.info';
 			} else if (language == "th") {
-				window.location.href = 'http://th.iruna-online.info';
+				window.location.href = 'https://th.iruna-online.info';
 			} else {
-				window.location.href = 'http://www.iruna-online.info';
+				window.location.href = 'https://www.iruna-online.info';
 			}
 		}
     </script>
@@ -1463,40 +1463,6 @@
       </div>
      </div>
      <div>
-      <div class="追加装備 default_attr darkr maxhp rangecut damagecut">
-       <b>
-        <a href="/item/愛を哭ぶ猫" id="愛を哭ぶ猫">
-         愛を哭ぶ猫   【追加装備】
-        </a>
-       </b>
-       <br/>
-       DEF: 25
-       <br/>
-       <div class="ds">
-        闇耐性+18%　MaxHP+15%　範囲軽減+15% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+15%
-       </div>
-       <div class="t_ds">
-        闇耐性 +18% MaxHP +15% 範囲軽減 +15% スタン中ダメージ軽減 +15%
-       </div>
-       <br/>
-      </div>
-      <div class="追加装備 default_attr lightr maxhp rangecut damagecut">
-       <b>
-        <a href="/item/愛を哭ぶ犬" id="愛を哭ぶ犬">
-         愛を哭ぶ犬   【追加装備】
-        </a>
-       </b>
-       <br/>
-       DEF: 25
-       <br/>
-       <div class="ds">
-        光耐性+18%　MaxHP+15%　範囲軽減+15% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+15%
-       </div>
-       <div class="t_ds">
-        光耐性 +18% MaxHP +15% 範囲軽減 +15% スタン中ダメージ軽減 +15%
-       </div>
-       <br/>
-      </div>
       <div class="追加装備 default_attr atk matk mpcost haterise">
        <b>
         <a href="/item/アバンドン" id="アバンドン">
@@ -1564,6 +1530,23 @@
        </div>
        <div class="t_ds">
         STR -5 AGI -5 VIT -5 INT -5 DEX -5 CRT -5 MaxHP -4% ATK +9% スキルディレイ -0.2s クリティカルダメージ +9%
+       </div>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr str agi vit int dex crt maxhp atk skilldelay criticaldamage">
+       <b>
+        <a href="/item/アビサルマスク(強化版)" id="アビサルマスク(強化版)">
+         アビサルマスク(強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 12
+       <br/>
+       <div class="ds">
+        全ｽﾃｰﾀｽ-5　MaxHP-4%　ATK+15% ｽｷﾙﾃﾞｨﾚｲ-0.8秒　ｸﾘﾃｨｶﾙﾀﾞﾒｰｼﾞ+19%
+       </div>
+       <div class="t_ds">
+        STR -5 AGI -5 VIT -5 INT -5 DEX -5 CRT -5 MaxHP -4% ATK +15% スキルディレイ -0.8s クリティカルダメージ +19%
        </div>
        <br/>
       </div>
@@ -1713,7 +1696,7 @@
         闇魔法威力+15%　射程+1　ASPD+20% ｵｰﾄｽｷﾙ発動-30%　MP消費-30% 気絶時間+3秒　ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減-30%
        </div>
        <div class="t_ds">
-        闇魔法威力 +15% 射程 +1 ASPD +20% オートスキル発動 -30% MP消費 -30% 気絶時間 -3.0s スタン中ダメージ軽減 -30%
+        闇魔法威力 +15% 射程 +1 ASPD +20% オートスキル発動 -30% MP消費 -30% 気絶時間 +3.0s スタン中ダメージ軽減 -30%
        </div>
        <br/>
       </div>
@@ -3008,21 +2991,30 @@
        <br/>
        <br/>
       </div>
-      <div class="追加装備 default_attr ailmentr mpcost autoskill">
+      <div class="追加装備 default_attr ailmentr ailmentr mpcost mpcost autoskill autoskill">
        <b>
         <a href="/item/頭乗りバード" id="頭乗りバード">
          頭乗りバード   【追加装備】 📷
         </a>
        </b>
        <br/>
-       DEF: 10
+       DEF: 20
        <br/>
        <div class="ds">
-        異常耐性+20%　MP消費-15% 攻撃時、確率で魔法攻撃 CRT256以上ならｵｰﾄｽｷﾙ発動+10%
+        異常耐性+25%　MP消費-25% 攻撃時、確率で魔法攻撃 CRT256以上ならｵｰﾄｽｷﾙ発動+13%
        </div>
        <div class="t_ds">
-        異常耐性 +20% MP消費 -15% If [CRT &gt; 256] then オートスキル発動 +10% オートスキル発動
+        異常耐性 +25% 異常耐性 +20% MP消費 -25% MP消費 -15% If [CRT &gt; 256] then If [CRT &gt; 256] then オートスキル発動 +13% オートスキル発動 +10% オートスキル発動 オートスキル発動
        </div>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr">
+       <b>
+        <a href="/item/頭乗りバード(強化版)" id="頭乗りバード(強化版)">
+         頭乗りバード(強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
        <br/>
       </div>
       <div class="追加装備 default_attr healrecovery mdef">
@@ -3228,10 +3220,10 @@
        ATK: 3 DEF: 1
        <br/>
        <div class="ds">
-        INT+3　猫の日期間中、経験値+22% 追加に装備した場合、攻撃時、追加攻撃
+        INT+3　猫の日期間中、経験値+222% 追加に装備した場合、攻撃時、追加攻撃
        </div>
        <div class="t_ds">
-        [Additional] INT +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+        [Additional] INT +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +222% [Additional] オートスキル発動
        </div>
        備考: Trade×　Slot:1
        <br/>
@@ -3247,10 +3239,10 @@
        ATK: 5 DEF: 3
        <br/>
        <div class="ds">
-        INT+4　猫の日期間中、経験値+22% 追加に装備した場合、攻撃時、追加攻撃
+        INT+4　猫の日期間中、経験値+222% 追加に装備した場合、攻撃時、追加攻撃
        </div>
        <div class="t_ds">
-        [Additional] INT +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+        [Additional] INT +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +222% [Additional] オートスキル発動
        </div>
        備考: Trade×　Slot:1　DEF=黒にゃんこセットの数値+2　ATK=黒にゃんこセットの数値+2
        <br/>
@@ -3843,6 +3835,23 @@
        </div>
        <br/>
       </div>
+      <div class="追加装備 default_attr waterr earthr autoskill magicpower str agi vit int dex crt">
+       <b>
+        <a href="/item/ボトムギフト(強化版)" id="ボトムギフト(強化版)">
+         ボトムギフト(強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 1
+       <br/>
+       <div class="ds">
+        水耐性+12%　地耐性+10%　ｵｰﾄｽｷﾙ発動+8% 物理・魔法威力+500　全ｽﾃｰﾀｽ+8
+       </div>
+       <div class="t_ds">
+        水耐性 +12% 地耐性 +10% オートスキル発動 +8% +500 魔法威力 +500 STR +8 AGI +8 VIT +8 INT +8 DEX +8 CRT +8
+       </div>
+       <br/>
+      </div>
       <div class="追加装備 default_attr rangecut magicboss skilldelay">
        <b>
         <a href="/item/三編みバンド" id="三編みバンド">
@@ -4036,6 +4045,23 @@
        </div>
        備考: DEF=ブリムハットの数値+2?　ATK=ブリムハットの数値+2?
        <br/>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr criticalrate criticaldamage maxmp knockout skilldelay">
+       <b>
+        <a href="/item/ブリムハット(強強化版)" id="ブリムハット(強強化版)">
+         ブリムハット(強強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       ATK: 18 DEF: 8
+       <br/>
+       <div class="ds">
+        ｸﾘﾃｨｶﾙ強化　MaxMP+23%　気絶時間+1秒 ｽｷﾙﾃﾞｨﾚｲ-1.5秒 力尽きた時、5%の確率でHPを回復
+       </div>
+       <div class="t_ds">
+        クリティカル率 +10 クリティカルダメージ +15% MaxMP +23% 気絶時間 +1.0s スキルディレイ -1.5s オートスキル発動
+       </div>
        <br/>
       </div>
       <div class="追加装備 default_attr meleer magicr evasion meleer magicr evasion">
@@ -4236,7 +4262,7 @@
        <br/>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr reflect str vit criticaldamage firer">
        <b>
         <a href="/item/サボテンシニョン(再強化版)" id="サボテンシニョン(再強化版)">
          サボテンシニョン(再強化版)   【追加装備】 📷
@@ -4247,6 +4273,9 @@
        <br/>
        <div class="ds">
         ﾀﾞﾒｰｼﾞ反射+25%　STR+15　VIT+10 ｸﾘﾃｨｶﾙﾀﾞﾒｰｼﾞ+15%　火耐性+13%
+       </div>
+       <div class="t_ds">
+        ダメージ反射 +25% STR +15 VIT +10 クリティカルダメージ +15% 火耐性 +13%
        </div>
        <br/>
       </div>
@@ -4463,10 +4492,10 @@
        ATK: 2 DEF: 2
        <br/>
        <div class="ds">
-        VIT+3　猫の日期間中、経験値+22% 追加に装備した場合、攻撃時、追加攻撃
+        VIT+3　猫の日期間中、経験値+222% 追加に装備した場合、攻撃時、追加攻撃
        </div>
        <div class="t_ds">
-        [Additional] VIT +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+        [Additional] VIT +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +222% [Additional] オートスキル発動
        </div>
        備考: Trade×　Slot:1
        <br/>
@@ -4482,10 +4511,10 @@
        ATK: 4 DEF: 4
        <br/>
        <div class="ds">
-        VIT+4　猫の日期間中、経験値+22% 追加に装備した場合、攻撃時、追加攻撃
+        VIT+4　猫の日期間中、経験値+222% 追加に装備した場合、攻撃時、追加攻撃
        </div>
        <div class="t_ds">
-        [Additional] VIT +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+        [Additional] VIT +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +222% [Additional] オートスキル発動
        </div>
        備考: Trade×　Slot:1　DEF=にゃんこセットの数値+2　ATK=にゃんこセットの数値+2
        <br/>
@@ -4959,6 +4988,23 @@
        </div>
        <br/>
       </div>
+      <div class="追加装備 default_attr windr maxhp rangecut damagecut">
+       <b>
+        <a href="/item/蟹次郎(強化版)" id="蟹次郎(強化版)">
+         蟹次郎(強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       ATK: 2 DEF: 25
+       <br/>
+       <div class="ds">
+        風耐性+20%　MaxHP+20%　範囲軽減+20% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+20%
+       </div>
+       <div class="t_ds">
+        風耐性 +20% MaxHP +20% 範囲軽減 +20% スタン中ダメージ軽減 +20%
+       </div>
+       <br/>
+      </div>
       <div class="追加装備 default_attr waterr maxhp rangecut damagecut">
        <b>
         <a href="/item/蟹太郎" id="蟹太郎">
@@ -4976,6 +5022,23 @@
        </div>
        <br/>
       </div>
+      <div class="追加装備 default_attr waterr maxhp rangecut damagecut">
+       <b>
+        <a href="/item/蟹太郎(強化版)" id="蟹太郎(強化版)">
+         蟹太郎(強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       ATK: 2 DEF: 25
+       <br/>
+       <div class="ds">
+        水耐性+20%　MaxHP+20%　範囲軽減+20% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+20%
+       </div>
+       <div class="t_ds">
+        水耐性 +20% MaxHP +20% 範囲軽減 +20% スタン中ダメージ軽減 +20%
+       </div>
+       <br/>
+      </div>
       <div class="追加装備 default_attr earthr maxhp rangecut damagecut">
        <b>
         <a href="/item/蟹三郎" id="蟹三郎">
@@ -4990,6 +5053,23 @@
        </div>
        <div class="t_ds">
         地耐性 +18% MaxHP +15% 範囲軽減 +15% スタン中ダメージ軽減 +15%
+       </div>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr earthr maxhp rangecut damagecut">
+       <b>
+        <a href="/item/蟹三郎(強化版)" id="蟹三郎(強化版)">
+         蟹三郎(強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       ATK: 2 DEF: 25
+       <br/>
+       <div class="ds">
+        地耐性+20%　MaxHP+20%　範囲軽減+20% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+20%
+       </div>
+       <div class="t_ds">
+        地耐性 +20% MaxHP +20% 範囲軽減 +20% スタン中ダメージ軽減 +20%
        </div>
        <br/>
       </div>
@@ -5082,7 +5162,7 @@
        <br/>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr exp drop">
        <b>
         <a href="/item/クライリング" id="クライリング">
          クライリング   【追加装備】
@@ -5093,6 +5173,9 @@
        <br/>
        <div class="ds">
         経験値+15% ﾚｱﾄﾞﾛｯﾌﾟ率がほんのちょっと上昇する
+       </div>
+       <div class="t_ds">
+        経験値 +15% ドロップ +5%
        </div>
        <br/>
       </div>
@@ -5240,7 +5323,7 @@
        </div>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr firer waterr windr earthr autohprecovery automprecovery healreward x x x x x x x x firemagic watermagic windmagic earthmagic x healrecovery">
        <b>
         <a href="/item/くるるんおはな(強化版)" id="くるるんおはな(強化版)">
          くるるんおはな(強化版)   【追加装備】
@@ -5251,6 +5334,9 @@
        <br/>
        <div class="ds">
         四元属性耐性+5%　自然回復+22% ﾋｰﾙ受け+22%　ｽﾃｰﾀｽが222以上のものが 多いほど、ﾋｰﾙ回復、 四元魔法威力が上昇
+       </div>
+       <div class="t_ds">
+        火耐性 +5% 水耐性 +5% 風耐性 +5% 地耐性 +5% HP自然回復 +22% MP自然回復 +22% ヒール受け +22% [X = 0] If [STR &gt; 222] then [X = X + 1] If [INT &gt; 222] then [X = X + 1] If [VIT &gt; 222] then [X = X + 1] If [AGI &gt; 222] then [X = X + 1] If [DEX &gt; 222] then [X = X + 1] If [CRT &gt; 222] then [X = X + 1] [Jan] [X = X · 2] [火魔法威力 up by X] [水魔法威力 up by X] [風魔法威力 up by X] [地
        </div>
        <br/>
       </div>
@@ -5430,7 +5516,7 @@
        </div>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr darkmagic darkr maxmp matk spellburst casttime magicpierce">
        <b>
         <a href="/item/ダークネスフリル" id="ダークネスフリル">
          ダークネスフリル   【追加装備】
@@ -5442,9 +5528,12 @@
        <div class="ds">
         闇魔法威力+5%　闇耐性+5%　詠唱時間-10% ｽﾍﾟﾙﾊﾞｰｽﾄ率+2%　MaxMP+5%　MATK+5% 防御時、確率で魔法反撃
        </div>
+       <div class="t_ds">
+        闇魔法威力 +5% 闇耐性 +5% MaxMP +5% MATK +5% スペルバースト率 +2% 詠唱時間 -10% オートスキル発動 When equip [エアオブザダーク] then 魔法貫通 +10%
+       </div>
        <br/>
       </div>
-      <div class="追加装備 default_attr darkmagic darkr matk spellburst int magicpierce">
+      <div class="追加装備 default_attr darkmagic darkr maxmp matk spellburst int magicpierce">
        <b>
         <a href="/item/ダークネスハット" id="ダークネスハット">
          ダークネスハット   【追加装備】
@@ -5457,7 +5546,7 @@
         闇魔法威力+5%　闇耐性+5%　INT+5 ｽﾍﾟﾙﾊﾞｰｽﾄ率+2%　MaxMP+5%　MATK+5% 防御時、確率で魔法反撃
        </div>
        <div class="t_ds">
-        闇魔法威力 +5% 闇耐性 +5% MATK +5% スペルバースト率 +2% INT +5 オートスキル発動 When equip [エアオブザダーク] then 魔法貫通 +10%
+        闇魔法威力 +5% 闇耐性 +5% MaxMP +5% MATK +5% スペルバースト率 +2% INT +5 オートスキル発動 When equip [エアオブザダーク] then 魔法貫通 +10%
        </div>
        <br/>
       </div>
@@ -5512,7 +5601,7 @@
        </div>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr neutralmagic firemagic watermagic windmagic earthmagic lightmagic darkmagic healreward magicboss mdef">
        <b>
         <a href="/item/ダンテルティアラ(強化版)" id="ダンテルティアラ(強化版)">
          ダンテルティアラ(強化版)   【追加装備】
@@ -5523,6 +5612,9 @@
        <br/>
        <div class="ds">
         全魔法威力+7%　ﾋｰﾙ受け+14% ﾎﾞｽに魔法+3%　MDEF+4% 防御時、確率でMPを少し回復
+       </div>
+       <div class="t_ds">
+        無魔法威力 +7% 火魔法威力 +7% 水魔法威力 +7% 風魔法威力 +7% 地魔法威力 +7% 光魔法威力 +7% 闇魔法威力 +7% ヒール受け +14% スに魔法 +3% MDEF +4% オートスキル発動
        </div>
        <br/>
       </div>
@@ -5596,7 +5688,7 @@
        <br/>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr str vit mdef magicr meleepierce criticalrate">
        <b>
         <a href="/item/悪魔の羽(再強化版)" id="悪魔の羽(再強化版)">
          悪魔の羽(再強化版)   【追加装備】 📷
@@ -5607,6 +5699,9 @@
        <br/>
        <div class="ds">
         STR+18　VIT+15　MDEF+18%　魔法耐性+6% 物理貫通+8%　ｸﾘﾃｨｶﾙ率+30 防御時、確率で魔法反撃
+       </div>
+       <div class="t_ds">
+        STR +18 VIT +15 MDEF +18% 魔法耐性 +6% 物理貫通 +8% クリティカル率 +30 オートスキル発動
        </div>
        <br/>
       </div>
@@ -5715,6 +5810,23 @@
        </div>
        <div class="t_ds">
         物理耐性 +4% 魔法耐性 +7% 割合軽減 +8% MATK +7% オートスキル発動
+       </div>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr maxhp maxmp itemrecovery itemdelay">
+       <b>
+        <a href="/item/ディナーバッグ" id="ディナーバッグ">
+         ディナーバッグ   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 1
+       <br/>
+       <div class="ds">
+        MaxHP・MP+10% ｱｲﾃﾑ回復+20%　ｱｲﾃﾑﾃﾞｨﾚｲ-2秒
+       </div>
+       <div class="t_ds">
+        MaxHP +10% MaxMP +10% アイテム回復 +20% アイテムディレイ -2.0s
        </div>
        <br/>
       </div>
@@ -5896,7 +6008,7 @@
        </div>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr meleetowater watermagic waterr skilldelay haterise meleer">
        <b>
         <a href="/item/竜子の賜物(強化版)" id="竜子の賜物(強化版)">
          竜子の賜物(強化版)   【追加装備】
@@ -5907,6 +6019,9 @@
        <br/>
        <div class="ds">
         水特化　ｽｷﾙﾃﾞｨﾚｲ-1.8秒 ﾍｲﾄ増加-29%　移動速度+4% 物理耐性+6%
+       </div>
+       <div class="t_ds">
+        水属性に物理 +8% 水魔法威力 +8% 水耐性 +8% スキルディレイ -1.8s ヘイト増加 -29% 移動速度 +4% 物理耐性 +6%
        </div>
        <br/>
       </div>
@@ -6298,7 +6413,7 @@
        <br/>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr vit reflect">
        <b>
         <a href="/item/エンシスシルト(再強化版)" id="エンシスシルト(再強化版)">
          エンシスシルト(再強化版)   【追加装備】 📷
@@ -6309,6 +6424,9 @@
        <br/>
        <div class="ds">
         VIT+20　ﾀﾞﾒｰｼﾞ反射+35%　物理威力+1000 物理威力+2% 防御時、確率で反撃
+       </div>
+       <div class="t_ds">
+        VIT +20 ダメージ反射 +35% +1000 +2% オートスキル発動
        </div>
        <br/>
       </div>
@@ -7094,6 +7212,23 @@
        </div>
        <br/>
       </div>
+      <div class="追加装備 default_attr fear magicr autoskill">
+       <b>
+        <a href="/item/フラジールローブ" id="フラジールローブ">
+         フラジールローブ   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 1
+       <br/>
+       <div class="ds">
+        恐怖発生+2%　魔法耐性+10% ｵｰﾄｽｷﾙ発動+10%
+       </div>
+       <div class="t_ds">
+        恐怖発生 +2% 魔法耐性 +10% オートスキル発動 +10%
+       </div>
+       <br/>
+      </div>
       <div class="追加装備 default_attr skilldelay evasion">
        <b>
         <a href="/item/フランケンボルト" id="フランケンボルト">
@@ -7672,7 +7807,7 @@
        </div>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr waterr windr earthr autohprecovery automprecovery matk int casttime skilldelay">
        <b>
         <a href="/item/絢爛の荊花冠(強化版)" id="絢爛の荊花冠(強化版)">
          絢爛の荊花冠(強化版)   【追加装備】
@@ -7683,6 +7818,9 @@
        <br/>
        <div class="ds">
         水・風・地耐性+7%　自然回復+40% MATK+12%　INT+10　詠唱時間-8% DEXが300以上ならｽｷﾙﾃﾞｨﾚｲ-1.5秒
+       </div>
+       <div class="t_ds">
+        水耐性 +7% 風耐性 +7% 地耐性 +7% HP自然回復 +40% MP自然回復 +40% MATK +12% INT +10 詠唱時間 -8% If [DEX &gt; 300] then スキルディレイ -1.5s
        </div>
        <br/>
       </div>
@@ -8236,7 +8374,7 @@
        </div>
        <br/>
       </div>
-      <div class="追加装備 default_attr">
+      <div class="追加装備 default_attr matk spellburst paralysis">
        <b>
         <a href="/item/ハルピープリュム" id="ハルピープリュム">
          ハルピープリュム   【追加装備】
@@ -8247,6 +8385,9 @@
        <br/>
        <div class="ds">
         MATK+250　ｽﾍﾟﾙﾊﾞｰｽﾄ率+7% 麻痺持続+6秒
+       </div>
+       <div class="t_ds">
+        MATK +250 スペルバースト率 +7% 麻痺持続 +6.0s
        </div>
        <br/>
       </div>
@@ -10150,6 +10291,57 @@ Trade×
        </div>
        <br/>
       </div>
+      <div class="追加装備 default_attr darkr maxhp rangecut damagecut">
+       <b>
+        <a href="/item/愛を哭ぶ猫" id="愛を哭ぶ猫">
+         愛を哭ぶ猫   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 25
+       <br/>
+       <div class="ds">
+        闇耐性+18%　MaxHP+15%　範囲軽減+15% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+15%
+       </div>
+       <div class="t_ds">
+        闇耐性 +18% MaxHP +15% 範囲軽減 +15% スタン中ダメージ軽減 +15%
+       </div>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr lightr maxhp rangecut damagecut">
+       <b>
+        <a href="/item/愛を哭ぶ犬" id="愛を哭ぶ犬">
+         愛を哭ぶ犬   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 25
+       <br/>
+       <div class="ds">
+        光耐性+18%　MaxHP+15%　範囲軽減+15% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+15%
+       </div>
+       <div class="t_ds">
+        光耐性 +18% MaxHP +15% 範囲軽減 +15% スタン中ダメージ軽減 +15%
+       </div>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr firer maxhp rangecut damagecut">
+       <b>
+        <a href="/item/愛を哭ぶ兎" id="愛を哭ぶ兎">
+         愛を哭ぶ兎   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 25
+       <br/>
+       <div class="ds">
+        火耐性+18%　MaxHP+15%　範囲軽減+15% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+15%
+       </div>
+       <div class="t_ds">
+        火耐性 +18% MaxHP +15% 範囲軽減 +15% スタン中ダメージ軽減 +15%
+       </div>
+       <br/>
+      </div>
       <div class="追加装備 default_attr magicr maxhp maxmp haterise mdef darkr firer windr">
        <b>
         <a href="/item/ルアノーバシルト" id="ルアノーバシルト">
@@ -11436,6 +11628,21 @@ Trade×
        <br/>
        <br/>
       </div>
+      <div class="追加装備 default_attr skilldelay itemdelay matk lightmagic spellburst absoluteevasion magicevasion">
+       <b>
+        <a href="/item/ノクロスシルト(強強化版)" id="ノクロスシルト(強強化版)">
+         ノクロスシルト(強強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        ﾃﾞｨﾚｲ+0.1秒　MATK+13%　光魔法威力+7% ｽﾍﾟﾙﾊﾞｰｽﾄ率+8%　ネメシス威力+10%
+       </div>
+       <div class="t_ds">
+        スキルディレイ +0.1s アイテムディレイ +0.1s MATK +13% 光魔法威力 +7% スペルバースト率 +8% 絶対回避 -5% 魔法回避 -5%
+       </div>
+       <br/>
+      </div>
       <div class="追加装備 default_attr darkr lightmagic healrecovery castdefense magicboss meleer">
        <b>
         <a href="/item/ノエルアーラ" id="ノエルアーラ">
@@ -12466,6 +12673,23 @@ Trade×
        <br/>
        <br/>
       </div>
+      <div class="追加装備 default_attr meleer magicr neutralmagic lightmagic neutralr lightr">
+       <b>
+        <a href="/item/プリマヘルム(強強化版)" id="プリマヘルム(強強化版)">
+         プリマヘルム(強強化版)   【追加装備】
+        </a>
+       </b>
+       <br/>
+       ATK: 5 DEF: 22
+       <br/>
+       <div class="ds">
+        物理・魔法耐性+8%　無・光魔法威力+12% 防御時、確率でｽｷﾙﾃﾞｨﾚｲ減少 INT256以上なら無・光耐性+9%
+       </div>
+       <div class="t_ds">
+        物理耐性 +8% 魔法耐性 +8% 無魔法威力 +12% 光魔法威力 +12% オートスキル発動 If [INT &gt; 256] then 無耐性 +9% 光耐性 +9%
+       </div>
+       <br/>
+      </div>
       <div class="追加装備 default_attr maxhp agi">
        <b>
         <a href="/item/プライアハット" id="プライアハット">
@@ -12690,23 +12914,6 @@ Trade×
        </div>
        備考: Slot:1
        <br/>
-       <br/>
-      </div>
-      <div class="追加装備 default_attr firer maxhp rangecut damagecut">
-       <b>
-        <a href="/item/愛を哭ぶ兎" id="愛を哭ぶ兎">
-         愛を哭ぶ兎   【追加装備】
-        </a>
-       </b>
-       <br/>
-       DEF: 25
-       <br/>
-       <div class="ds">
-        火耐性+18%　MaxHP+15%　範囲軽減+15% ｽﾀﾝ中ﾀﾞﾒｰｼﾞ軽減+15%
-       </div>
-       <div class="t_ds">
-        火耐性 +18% MaxHP +15% 範囲軽減 +15% スタン中ダメージ軽減 +15%
-       </div>
        <br/>
       </div>
       <div class="追加装備 default_attr atk criticaldamage range itemdelay">
@@ -14045,6 +14252,23 @@ Trade×
        </div>
        <div class="t_ds">
         STR +20 VIT +20 [Swords] STR +20 VIT +20
+       </div>
+       <br/>
+      </div>
+      <div class="追加装備 default_attr fear meleer autoskill">
+       <b>
+        <a href="/item/スクリームローブ" id="スクリームローブ">
+         スクリームローブ   【追加装備】
+        </a>
+       </b>
+       <br/>
+       DEF: 1
+       <br/>
+       <div class="ds">
+        恐怖発生+2%　物理耐性+10% ｵｰﾄｽｷﾙ発動+10%
+       </div>
+       <div class="t_ds">
+        恐怖発生 +2% 物理耐性 +10% オートスキル発動 +10%
        </div>
        <br/>
       </div>
@@ -16129,10 +16353,10 @@ Trade×
        ATK: 1 DEF: 3
        <br/>
        <div class="ds">
-        DEX+3　猫の日期間中、経験値+22% 追加に装備した場合、攻撃時、追加攻撃
+        DEX+3　猫の日期間中、経験値+222% 追加に装備した場合、攻撃時、追加攻撃
        </div>
        <div class="t_ds">
-        [Additional] DEX +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+        [Additional] DEX +3 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +222% [Additional] オートスキル発動
        </div>
        備考: Trade×　Slot:1
        <br/>
@@ -16148,10 +16372,10 @@ Trade×
        ATK: 3 DEF: 5
        <br/>
        <div class="ds">
-        DEX+4　猫の日期間中、経験値+22% 追加に装備した場合、攻撃時、追加攻撃
+        DEX+4　猫の日期間中、経験値+222% 追加に装備した場合、攻撃時、追加攻撃
        </div>
        <div class="t_ds">
-        [Additional] DEX +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +22% [Additional] オートスキル発動
+        [Additional] DEX +4 [Cat Day] [Additional] When equip [にゃんこセット][黒にゃんこセット][白にゃんこセット][にゃんこセット(強化版)][黒にゃんこセット(強化版)][白にゃんこセット(強化版)] then 経験値 +222% [Additional] オートスキル発動
        </div>
        備考: Trade×　Slot:1　DEF=白にゃんこセットの数値+2　ATK=白にゃんこセットの数値+2
        <br/>
@@ -16924,17 +17148,17 @@ Trade×
      </div>
      <ul class="decoration_none">
       <li>
-       <a href="http://www.iruna-online.info">
+       <a href="https://www.iruna-online.info">
        </a>
        Iruna-Online
       </li>
       <li>
-       <a href="http://www.toram-online.info">
+       <a href="https://www.toram-online.info">
        </a>
        Toram-Online
       </li>
       <li>
-       <a href="http://www.ragnarok-online.info">
+       <a href="https://www.ragnarok-online.info">
        </a>
        Ragnarok-Online Mobile
       </li>

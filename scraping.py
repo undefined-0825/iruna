@@ -12,10 +12,15 @@ def main():
     if os.path.exists(DB_FILE):
         print(f'{DB_FILE}を削除')
         os.remove(DB_FILE)
+
+    # DB再構築
     make_db()
 
+    # スクレイピング
     scraping()
+    # 装備をDBに登録
     regist_equip()
+    # 装備プロパティを構築
     make_equip_property()
     print('done!')
 
@@ -37,7 +42,7 @@ def save_html(equip):
     if os.path.exists(outputfile):
         return
 
-    BASE_URL = 'https://jp.iruna-online.info'
+    BASE_URL = 'https://jp.iruna-online.info/iruna'
     target_url = f'{BASE_URL}/items/{equip}'
     print(target_url)
     r = requests.get(target_url)

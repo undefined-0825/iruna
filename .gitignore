@@ -1,0 +1,15 @@
+## Python generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+## Visual Studio generated files
+.vs/
+**/bin/
+**/obj/
+*.suo
+*.user
+
+## Local tooling and temporary files
+*.log
+*.tmp

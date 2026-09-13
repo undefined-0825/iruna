@@ -436,11 +436,11 @@
     <script type="text/javascript">
      function LanguageChange(language){
 			if (language == "jp") {
-				window.location.href = 'http://jp.iruna-online.info';
+				window.location.href = 'https://jp.iruna-online.info';
 			} else if (language == "th") {
-				window.location.href = 'http://th.iruna-online.info';
+				window.location.href = 'https://th.iruna-online.info';
 			} else {
-				window.location.href = 'http://www.iruna-online.info';
+				window.location.href = 'https://www.iruna-online.info';
 			}
 		}
     </script>
@@ -1463,6 +1463,18 @@
       </div>
      </div>
      <div>
+      <div class="杖 default_attr">
+       <b>
+        <a href="/item/アフェクロッド" id="アフェクロッド">
+         アフェクロッド   【杖】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        MATK+15%　命中+100　ｵｰﾄｽｷﾙ発動+8% 麻痺発生+5%　 攻撃時、確率で魔法攻撃
+       </div>
+       <br/>
+      </div>
       <div class="杖 default_attr maxhp maxmp matk healrecovery">
        <b>
         <a href="/item/アレンの辞書" id="アレンの辞書">
@@ -1989,7 +2001,7 @@
        </div>
        <br/>
       </div>
-      <div class="杖 default_attr matk y y y x x mpcost aspd">
+      <div class="杖 default_attr matk y y y y x x mpcost aspd">
        <b>
         <a href="/item/ブルームーン" id="ブルームーン">
          ブルームーン   【杖】 📷
@@ -2002,7 +2014,7 @@
         MATK+30%　MP消費+1000% Lvに応じてMP消費が減少する
        </div>
        <div class="t_ds">
-        MATK +30% [Y = Lv] [Y = Y / 13] [Y = Y · Y] [X = 1000] [X = X - Y] [MP消費 up by X] ASPD -100%
+        MATK +30% [Y = Lv] If [Y &gt; 400] then [Y = 400] [Y = Y / 13] [Y = Y · Y] [X = 1000] [X = X - Y] [MP消費 up by X] ASPD -100%
        </div>
        備考: MP消費減少=100-Lv×0.15=MP消費%程度?
        <br/>
@@ -2434,6 +2446,20 @@
        </div>
        <div class="t_ds">
         MATK +27% 詠唱時間 -16% スペルバースト率 +1% オートスキル発動
+       </div>
+       <br/>
+      </div>
+      <div class="杖 default_attr">
+       <b>
+        <a href="/item/杯杖エクレシア" id="杯杖エクレシア">
+         杯杖エクレシア   【杖】
+        </a>
+       </b>
+       <br/>
+       ATK: 252
+       <br/>
+       <div class="ds">
+        魔法杖　MATK+8% ヒール回復+30%　ネメシス威力+15%
        </div>
        <br/>
       </div>
@@ -3358,6 +3384,20 @@ ATK = Fruru Revel +100
        <br/>
        <br/>
       </div>
+      <div class="杖 default_attr">
+       <b>
+        <a href="/item/ヘネラルワンドⅣ" id="ヘネラルワンドⅣ">
+         ヘネラルワンドⅣ   【杖】
+        </a>
+       </b>
+       <br/>
+       ATK: 297
+       <br/>
+       <div class="ds">
+        四元魔法威力+17% ATK-20%　詠唱時間-32%　ｽｷﾙﾃﾞｨﾚｲ-0.7秒
+       </div>
+       <br/>
+      </div>
       <div class="杖 default_attr watermagic matk">
        <b>
         <a href="/item/グラシアルワンド" id="グラシアルワンド">
@@ -4007,7 +4047,7 @@ ATK = Fruru Revel +100
        <br/>
        <br/>
       </div>
-      <div class="杖 default_attr range matk healrecovery absoluteevasion haterise x x x magicpower automprecovery">
+      <div class="杖 default_attr range matk healrecovery absoluteevasion haterise knockout x x x magicpower automprecovery">
        <b>
         <a href="/item/マハトラリオⅢ" id="マハトラリオⅢ">
          マハトラリオⅢ   【杖】 📷
@@ -4020,7 +4060,7 @@ ATK = Fruru Revel +100
         MATK+15%　ﾋｰﾙ回復+25%　絶対回避+10% ﾍｲﾄ増加-25%　気絶時間-1秒　射程+2 魔法威力がLvに応じて増加
        </div>
        <div class="t_ds">
-        射程 +2 MATK +15% ヒール回復 +25% 絶対回避 +10% ヘイト増加 -25% [X = Lv] [X = X · Lv] [X = X / 50] [魔法威力 up by X] MP自然回復 +25%
+        射程 +2 MATK +15% ヒール回復 +25% 絶対回避 +10% ヘイト増加 -25% 気絶時間 -1.0s [X = Lv] [X = X · Lv] [X = X / 50] [魔法威力 up by X] MP自然回復 +25%
        </div>
        <br/>
       </div>
@@ -4689,7 +4729,7 @@ ATK = Fruru Revel +100
        </div>
        <br/>
       </div>
-      <div class="杖 default_attr">
+      <div class="杖 default_attr earthmagic matk vit mpcost spellburst">
        <b>
         <a href="/item/幽幻重月円" id="幽幻重月円">
          幽幻重月円   【杖】
@@ -4700,6 +4740,9 @@ ATK = Fruru Revel +100
        <br/>
        <div class="ds">
         地魔法威力+8%　MATK+10%　VIT+15 MP消費-20%　ｽﾍﾟﾙﾊﾞｰｽﾄ率+4% 防御時、確率で魔法反撃
+       </div>
+       <div class="t_ds">
+        地魔法威力 +8% MATK +10% VIT +15 MP消費 -20% スペルバースト率 +4% オートスキル発動
        </div>
        <br/>
       </div>
@@ -5213,6 +5256,18 @@ ATK = Fruru Revel +100
        </div>
        <br/>
       </div>
+      <div class="杖 default_attr">
+       <b>
+        <a href="/item/サンドウィザード" id="サンドウィザード">
+         サンドウィザード   【杖】
+        </a>
+       </b>
+       <br/>
+       <div class="ds">
+        INTがCRTの30%増加
+       </div>
+       <br/>
+      </div>
       <div class="杖 default_attr matk earthr waterr spellburst castdefense magicpierce">
        <b>
         <a href="/item/サンテュスター" id="サンテュスター">
@@ -5477,6 +5532,20 @@ ATK = Fruru Revel +100
        </div>
        <div class="t_ds">
         火魔法威力 +11% MP消費 +20% 詠唱時間 -20% 発火時間 +10.0s
+       </div>
+       <br/>
+      </div>
+      <div class="杖 default_attr">
+       <b>
+        <a href="/item/リフルスコーチⅡ" id="リフルスコーチⅡ">
+         リフルスコーチⅡ   【杖】
+        </a>
+       </b>
+       <br/>
+       ATK: 293
+       <br/>
+       <div class="ds">
+        火魔法威力+17%　MP消費+20% 詠唱時間-20%　発火持続+15秒 メテオストーム威力+20%
        </div>
        <br/>
       </div>
@@ -6324,23 +6393,6 @@ ATK = Fruru Revel +100
        </div>
        <br/>
       </div>
-      <div class="杖 default_attr matk windmagic healrecovery haterise autoskill">
-       <b>
-        <a href="/item/ヴェルケ" id="ヴェルケ">
-         ヴェルケ   【杖】
-        </a>
-       </b>
-       <br/>
-       ATK: 253 DEF: 2
-       <br/>
-       <div class="ds">
-        MATK+8%　風魔法威力+12%　ﾋｰﾙ回復+20% ﾍｲﾄ増加+20%　ｵｰﾄｽｷﾙ発動+4% シュタルクSLv+1
-       </div>
-       <div class="t_ds">
-        MATK +8% 風魔法威力 +12% ヒール回復 +20% ヘイト増加 +20% オートスキル発動 +4%
-       </div>
-       <br/>
-      </div>
       <div class="杖 default_attr matk castdefense mpcost">
        <b>
         <a href="/item/ヴィーブルオス" id="ヴィーブルオス">
@@ -6389,6 +6441,23 @@ ATK = Fruru Revel +100
        </div>
        <div class="t_ds">
         水魔法威力 +17% 水耐性 +12% INT +4 詠唱時間 -5%
+       </div>
+       <br/>
+      </div>
+      <div class="杖 default_attr matk windmagic healrecovery haterise autoskill">
+       <b>
+        <a href="/item/ヴェルケ" id="ヴェルケ">
+         ヴェルケ   【杖】
+        </a>
+       </b>
+       <br/>
+       ATK: 253 DEF: 2
+       <br/>
+       <div class="ds">
+        MATK+8%　風魔法威力+12%　ﾋｰﾙ回復+20% ﾍｲﾄ増加+20%　ｵｰﾄｽｷﾙ発動+4% シュタルクSLv+1
+       </div>
+       <div class="t_ds">
+        MATK +8% 風魔法威力 +12% ヒール回復 +20% ヘイト増加 +20% オートスキル発動 +4%
        </div>
        <br/>
       </div>
@@ -6491,17 +6560,17 @@ ATK = Fruru Revel +100
      </div>
      <ul class="decoration_none">
       <li>
-       <a href="http://www.iruna-online.info">
+       <a href="https://www.iruna-online.info">
        </a>
        Iruna-Online
       </li>
       <li>
-       <a href="http://www.toram-online.info">
+       <a href="https://www.toram-online.info">
        </a>
        Toram-Online
       </li>
       <li>
-       <a href="http://www.ragnarok-online.info">
+       <a href="https://www.ragnarok-online.info">
        </a>
        Ragnarok-Online Mobile
       </li>
