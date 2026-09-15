@@ -19,15 +19,35 @@ def make_db():
 
 def create_equip_table(cur):
     if not exists_table(cur, 'equip'):
-        cur.execute('CREATE TABLE equip(id INTEGER PRIMARY KEY AUTOINCREMENT, type INTEGER, name STRING, ds STRING, t_ds STRING, math STRING, note1 STRING, note2 STRING)')
+        cur.execute("""CREATE TABLE equip(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+type INTEGER,
+name STRING,
+ds STRING,
+ds_normalized STRING,
+t_ds STRING,
+math STRING,
+atk STRING,
+def STRING,
+note1 STRING,
+note2 STRING
+)""")
 
 def create_prop_table(cur):
     if not exists_table(cur, 'prop'):
-        cur.execute('CREATE TABLE prop(id INTEGER PRIMARY KEY AUTOINCREMENT, name STRING)')
+        cur.execute("""CREATE TABLE prop(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name STRING
+)""")
 
 def create_eq_prop_table(cur):
     if not exists_table(cur, 'eq_prop'):
-        cur.execute('CREATE TABLE eq_prop(eqid INTEGER, propid INTEGER, value REAL, unit STRING, PRIMARY KEY(eqid, propid))')
+        cur.execute("""CREATE TABLE eq_prop(
+eqid INTEGER,
+propid INTEGER,
+value REAL,
+unit STRING,
+PRIMARY KEY(eqid, propid))""")
 
 def delete_equip_table(cur):
     cur.execute('DELETE FROM equip')
