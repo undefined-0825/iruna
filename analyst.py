@@ -19,7 +19,7 @@ def make_equip_property():
         for eq in equips:
             eqid = eq[0]
             name = eq[2]
-            t_ds = str(eq[4]).replace('スに物理', 'ボスに物理').replace('スに魔法', 'ボスに魔法')
+            t_ds = str(eq[4])
 
             # propを走査
             for prop in props:

@@ -3,6 +3,7 @@ from irunadblib import get_connection
 from constants import equips
 from bs4 import BeautifulSoup
 from lib import read_text, included_lines, find_first_index
+import unicodedata
 
 props = []
 
@@ -69,24 +70,27 @@ def insert_equip(cur, item, eqtype, jp_name):
     math = ''
     if t_ds:
         # 計算式を分離
-        t_ds = str(t_ds.text)
+        t_ds = str(t_ds.text).replace(' スに', ' ボスに').strip()
         math_index = find_first_index(t_ds, ['[', 'if', 'If', 'When', 'equip'])
         if math_index >= 0:
-            math = t_ds[math_index: len(t_ds)-1]
+            math = t_ds[math_index: len(t_ds)]
             # print(f'  {math.strip()}')
             t_ds = t_ds[0: math_index]
 
-        t_ds = t_ds.replace(' スに', ' ボスに').strip()
+        t_ds = t_ds
         # print(f'  {t_ds}')
         add_prop(t_ds)
     else:
         t_ds = ''
 
-    query = f"""INSERT INTO equip(type, [name], ds, t_ds, math, atk, def, note1, note2) 
+    t_ds_normalized = remove_spaces_before_signs(zen_to_han(t_ds)).replace(' ', '\r\n').strip()
+
+    query = f"""INSERT INTO equip(type, [name], ds, t_ds, t_ds_normalized, math, atk, def, note1, note2) 
 VALUES({eqtype}, 
 "{cnv(name)}", 
 "{cnv(ds)}", 
 "{cnv(t_ds)}", 
+"{t_ds_normalized}", 
 "{cnv(math)}", 
 "{atk}", 
 "{def_}", 
@@ -110,6 +114,15 @@ def parse_atk_def(text: str) -> dict:
         "def": int(def_match.group(1)) if def_match else None
     }
 
+def zen_to_han(text: str) -> str:
+    # 全角英数・記号などを半角に正規化
+    return unicodedata.normalize('NFKC', text)
+
+
+def remove_spaces_before_signs(text: str) -> str:
+    # 半角の「+」「-」の前にある1文字以上の半角スペースを削除
+    return re.sub(r' +([+\-])', r'\1', text)
+
 def add_prop(t_ds):
     # イルーナのプロパティを配列に追加
     global props
@@ -127,9 +140,6 @@ def add_prop(t_ds):
                 # if s == '防御時、確率でパリィ発動':
                 #     print(t_ds)
                 props.append(s)
-
-
-
 
 
 if __name__ == '__main__':

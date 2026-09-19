@@ -3,6 +3,9 @@ import re
 import unicodedata
 
 def main():
+    split_t_ds()
+
+def split_t_ds():
     # データベースからt_dsを取得して正規化し、ds_normalizedカラムを更新
     with get_connection() as conn:
         cur = conn.cursor()
@@ -14,7 +17,7 @@ def main():
             t_ds_str = str(t_ds) if t_ds is not None else ""
             ds_normalized = remove_spaces_before_signs(zen_to_han(t_ds_str)).replace(' ', '\r\n').strip()
             print(ds_normalized)
-            cur.execute("UPDATE equip SET ds_normalized = ? WHERE id = ?", (ds_normalized, row[0]))
+            cur.execute("UPDATE equip SET t_ds_normalized = ? WHERE id = ?", (ds_normalized, row[0]))
 
     conn.commit()
 

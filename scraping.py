@@ -1,9 +1,11 @@
 import os
 import requests
 from bs4 import BeautifulSoup
+from ds_split import split_t_ds
 from irunadblib import make_db
 from regist_equip import regist_equip
 from analyst import make_equip_property
+from math_prop import split_math
 from lib import write_text
 
 def main():
@@ -22,6 +24,10 @@ def main():
     regist_equip()
     # 装備プロパティを構築
     make_equip_property()
+    #t_dsを分割して正規化
+    split_t_ds()
+    # mathを分割して正規化
+    split_math()
     print('done!')
 
 def scraping():
