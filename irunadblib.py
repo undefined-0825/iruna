@@ -12,6 +12,10 @@ def make_db():
         create_equip_table(cur)
         create_prop_table(cur)
         create_eq_prop_table(cur)
+        create_item_table(cur)
+        create_equip_upgrade_table(cur)
+        create_upgrade_material_table(cur)
+        create_indexes(cur)
         insert_prop(cur)
 
 # prop.nameを持つ装備
@@ -49,6 +53,57 @@ propid INTEGER,
 value REAL,
 unit STRING,
 PRIMARY KEY(eqid, propid))""")
+
+
+
+# アイテム（収集品・素材）マスターテーブル
+def create_item_table(cur):
+    if not exists_table(cur, 'item'):
+        cur.execute("""CREATE TABLE item (
+id          INTEGER PRIMARY KEY AUTOINCREMENT,
+name        TEXT NOT NULL UNIQUE,       -- アイテム名（重複防止）
+note        TEXT                        -- 備考・入手先等
+);""")
+
+
+# 装備強化テーブル
+def create_equip_upgrade_table(cur):
+    if not exists_table(cur, 'equip_upgrade'):
+        cur.execute("""CREATE TABLE equip_upgrade (
+id            INTEGER PRIMARY KEY AUTOINCREMENT,
+from_equip_id INTEGER NOT NULL,          -- 強化元 equip.id
+to_equip_id   INTEGER NOT NULL,          -- 強化先 equip.id
+cost          INTEGER DEFAULT 0,         -- 必要費用（スピナ）
+location      TEXT,                      -- 強化場所 / NPC
+note          TEXT,                      -- 備考
+FOREIGN KEY (from_equip_id) REFERENCES equip(id),
+FOREIGN KEY (to_equip_id)   REFERENCES equip(id),
+UNIQUE (from_equip_id, to_equip_id)
+);""")
+
+# 強化素材リレーションテーブル
+def create_upgrade_material_table(cur):
+    if not exists_table(cur, 'upgrade_material'):
+        cur.execute("""CREATE TABLE upgrade_material (
+id                INTEGER PRIMARY KEY AUTOINCREMENT,
+equip_upgrade_id  INTEGER NOT NULL,      -- equip_upgrade.id
+item_id           INTEGER NOT NULL,      -- item.id
+quantity          INTEGER NOT NULL DEFAULT 1, -- 必要個数
+FOREIGN KEY (equip_upgrade_id) REFERENCES equip_upgrade(id) ON DELETE CASCADE,
+FOREIGN KEY (item_id)          REFERENCES item(id),
+UNIQUE (equip_upgrade_id, item_id)       -- 同一強化レシピ内での重複登録を防止
+);""")
+
+# 検索用インデックス
+def create_indexes(cur):
+    cur.execute("CREATE INDEX idx_upgrade_from ON equip_upgrade(from_equip_id)")
+    cur.execute("CREATE INDEX idx_upgrade_to   ON equip_upgrade(to_equip_id)")
+    cur.execute("CREATE INDEX idx_mat_upgrade  ON upgrade_material(equip_upgrade_id)")
+    cur.execute("CREATE INDEX idx_mat_item     ON upgrade_material(item_id)")
+
+
+
+
 
 def delete_equip_table(cur):
     cur.execute('DELETE FROM equip')
